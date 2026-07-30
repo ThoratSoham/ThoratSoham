@@ -114,8 +114,6 @@ me.say_hi()
 
 <div align="center">
 
-![Visitor Snake](https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg)
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:9370DB,50:6A0DAD,100:2E003E&height=120&section=footer"/>
 
 **"Unleashing my Creativity — one dataset, one strategy, one line of code at a time."**
