@@ -61,10 +61,10 @@ me.say_hi()
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ThoratSoham&show_icons=true&theme=radical&hide_border=true&bg_color=0D0221&title_color=B266FF&icon_color=9370DB&text_color=E6D9F5&ring_color=6A0DAD" width="49%"/>
+<img src="https://github-readme-stats-chi-woad-38.vercel.app/api?username=ThoratSoham&show_icons=true&theme=radical&hide_border=true&bg_color=0D0221&title_color=B266FF&icon_color=9370DB&text_color=E6D9F5&ring_color=6A0DAD" width="49%"/>
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=radical&hide_border=true&background=0D0221&stroke=6A0DAD&ring=9370DB&fire=B266FF&currStreakLabel=B266FF" width="49%"/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=B266FF&text_color=E6D9F5&cache_seconds=86400" width="49%"/>
+<img src="https://github-readme-stats-chi-woad-38.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=B266FF&text_color=E6D9F5&cache_seconds=86400" width="49%"/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=ThoratSoham&theme=radical&hide_border=true&bg_color=0D0221&color=B266FF&line=9370DB&point=E6D9F5&area=true&area_color=6A0DAD" width="98%"/>
 
