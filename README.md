@@ -1,231 +1,253 @@
 <div align="center">
 
-<!-- ===== NEURAL NETWORK HEADER ===== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,25:1a0033,50:6a0dad,75:B266FF,100:ffffff&height=260&section=header&text=SOHAM%20THORAT&fontSize=65&fontColor=ffffff&animation=twinkling&fontAlignY=32&desc=%3C%20Unleashing%20my%20Creativity%20%2F%3E&descAlignY=52&descSize=22&descColor=B266FF" width="100%"/>
+<!-- ===== NEURAL HEADER ===== -->
+<img src="https://capsule-render.vercel.app/api?type=slice&color=0:000000,25:1a0033,50:6a0dad,75:B266FF,100:ffffff&height=260&section=header&text=SOHAM%20THORAT&fontSize=70&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=%3C%20Unleashing%20my%20Creativity%20%2F%3E&descAlignY=58&descSize=22&descColor=B266FF" width="100%"/>
 
-<!-- Matrix-style typing -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=700&color=B266FF&center=true&vCenter=true&width=750&lines=%3E+initializing_neural_core...;%3E+loading_modules%3A+ML+%2B+DATA+%2B+QUANT;%3E+compiling+creativity.exe;%3E+access_granted+%F0%9F%9F%A2)](https://git.io/typing-svg)
-
-![](https://img.shields.io/badge/⚡-NEURAL_NETWORK_ONLINE-000000?style=for-the-badge&labelColor=6a0dad&color=B266FF)
-![](https://img.shields.io/badge/STATUS-COMPILING_CREATIVITY-000000?style=for-the-badge&labelColor=B266FF&color=6a0dad)
-
-</div>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=700&color=B266FF&center=true&vCenter=true&width=750&lines=%3E+booting+neural_core.py...;%3E+loading+datasets+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25;%3E+model+%3D+Soham(creativity%3DTrue);%3E+status%3A+ONLINE+%E2%9A%A1" />
 
 <br>
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 </div>
 
-## `01001000 01101001` — ABOUT THE CORE
-
-<table>
+<!-- ===== ABOUT ===== -->
+<table width="100%">
 <tr>
 <td width="60%" valign="top">
 
+## `01 —` INITIALIZE.exe
+
 ```python
-# ┌─────────────────────────────────────┐
-# │   NEURAL_PROFILE :: SOHAM_THORAT     │
-# └─────────────────────────────────────┘
+import ml, finance, curiosity
 
-class SohamThorat:
+class SohamThorat(Human):
     def __init__(self):
-        self.identity   = "Student · Builder · Data-Native"
-        self.core_stack = {
-            "language_models" : ["Python", "SQL", "R", "C++"],
-            "quant_layer"     : ["MQL5", "Pine Script"],
-            "ml_engine"       : ["scikit-learn", "pandas", "NumPy"]
-        }
-        self.obsession  = "ML ⚡ Finance — where signal meets strategy"
-        self.mode       = "learning_by_building()"
+        self.status      = "🟢 ONLINE"
+        self.role        = "Student · Builder · Quant-ML Hybrid"
+        self.stack       = ["Python", "SQL", "R", "C++", "MQL5", "PineScript"]
+        self.core_belief = "Data is the canvas. Code is the brush."
+        self.fun_fact    = "I live at the intersection of ML 🤖 + Finance 📈"
 
-    def philosophy(self):
-        return "Every dataset hides a decision. I go find it."
+    def compile(self):
+        while self.learning:
+            yield "building something new ⚡"
 
->>> node = SohamThorat()
->>> node.philosophy()
-"Every dataset hides a decision. I go find it."
+soham = SohamThorat()
+next(soham.compile())
+>>> "building something new ⚡"
 ```
 
 </td>
 <td width="40%" valign="top" align="center">
 
-<img src="https://raw.githubusercontent.com/DenverCoder1/DenverCoder1/main/scripts/languages.gif" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=4000&pause=1000&color=6A0DAD&background=00000000&center=true&width=280&lines=%5BSYSTEM%5D+Neural+link+stable;%5BSYSTEM%5D+Creativity+module%3A+MAX;%5BSYSTEM%5D+Curiosity%3A+infinite+loop" />
 
-<br>
+<br><br>
 
-![](https://img.shields.io/badge/NEURON-ML_x_FINANCE-000000?style=flat-square&labelColor=6a0dad&color=B266FF)
-![](https://img.shields.io/badge/FUEL-CURIOSITY-000000?style=flat-square&labelColor=B266FF&color=6a0dad)
+<img src="https://raw.githubusercontent.com/aditya-prakash-github/aditya-prakash-github/main/rocket.gif" width="1" height="1"/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="260"/>
 
 </td>
 </tr>
 </table>
 
-<br>
-
 <div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
+
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
 </div>
 
-## `01010100 01100101 01100011 01101000` — TECH STACK MATRIX
-
+<!-- ===== TECH GRID ===== -->
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,r,cpp,mysql,tensorflow,sklearn&theme=dark" />
+## `02 —` TECH_MATRIX.json
+
+<br>
+
+<img src="https://skillicons.dev/icons?i=python,r,cpp&theme=dark" height="60"/>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=B266FF" height="28"/>
+&nbsp;&nbsp;
+<img src="https://img.shields.io/badge/scikit--learn-000000?style=for-the-badge&logo=scikitlearn&logoColor=B266FF" height="28"/>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=B266FF&labelColor=1a0033" />
-<img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=B266FF&labelColor=1a0033" />
-<img src="https://img.shields.io/badge/R-000000?style=for-the-badge&logo=r&logoColor=B266FF&labelColor=1a0033" />
-<img src="https://img.shields.io/badge/C++-000000?style=for-the-badge&logo=cplusplus&logoColor=B266FF&labelColor=1a0033" />
-
-<br>
-
-<img src="https://img.shields.io/badge/scikit--learn-6a0dad?style=for-the-badge&logo=scikitlearn&logoColor=white" />
-<img src="https://img.shields.io/badge/Pandas-6a0dad?style=for-the-badge&logo=pandas&logoColor=white" />
-<img src="https://img.shields.io/badge/NumPy-6a0dad?style=for-the-badge&logo=numpy&logoColor=white" />
-
-<br>
-
-<img src="https://img.shields.io/badge/MQL5-B266FF?style=for-the-badge&logo=metatrader&logoColor=000000" />
-<img src="https://img.shields.io/badge/Pine%20Script-B266FF?style=for-the-badge&logo=tradingview&logoColor=000000" />
-
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
-</div>
-
-## `01110011 01110100 01100001 01110100 01110011` — SYSTEM METRICS
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ThoratSoham&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=B266FF&icon_color=B266FF&text_color=e0d4ff&ring_color=6a0dad" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=dark&hide_border=true&background=00000000&stroke=6a0dad&ring=B266FF&fire=ffffff&currStreakLabel=B266FF" width="49%" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=B266FF&text_color=e0d4ff&langs_count=8" width="60%" />
-
-</div>
-
-<br>
-
-## `01110100 01110010 01101111 01110000 01101000 01111001` — ACHIEVEMENT CORE
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" width="100%"/>
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
-</div>
-
-## `01100001 01100011 01110100 01101001 01110110 01101001 01110100 01111001` — CONTRIBUTION FLOW
-
-<div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ThoratSoham&theme=react-dark&bg_color=00000000&color=B266FF&line=B266FF&point=ffffff&area=true&hide_border=true" width="100%"/>
-</div>
-
-<br>
-
-### 🐍 Live Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/output/github-contribution-grid-snake.svg" width="100%"/>
-
-<sub>⚠️ Activates automatically once the GitHub Action in the setup note (bottom of this file) is added to your repo.</sub>
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
-</div>
-
-## `01100110 01110101 01101110 01100110 01100001 01100011 01110100` — SIGNAL DETECTED
-
-<div align="center">
-
-```
->>> query: intersection(ML, Finance)
->>> response: "Home. This is where I build."
-```
-
-![](https://img.shields.io/badge/💡_FUN_FACT-Loves_blending_ML_models_with_financial_markets-000000?style=for-the-badge&labelColor=6a0dad&color=B266FF)
-
-</div>
-
-<br>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.gif" width="100%">
-</div>
-
-## `01100011 01101111 01101110 01101110 01100101 01100011 01110100` — ESTABLISH CONNECTION
-
-<div align="center">
-
-[![GitHub](https://img.shields.io/badge/GitHub-ThoratSoham-000000?style=for-the-badge&logo=github&logoColor=B266FF&labelColor=1a0033)](https://github.com/ThoratSoham)
+<img src="https://img.shields.io/badge/MQL5-1a0033?style=for-the-badge&logo=metatrader&logoColor=ffffff&labelColor=6a0dad" />
+<img src="https://img.shields.io/badge/Pine%20Script-1a0033?style=for-the-badge&logo=tradingview&logoColor=ffffff&labelColor=6a0dad" />
+<img src="https://img.shields.io/badge/Pandas-1a0033?style=for-the-badge&logo=pandas&logoColor=ffffff&labelColor=6a0dad" />
+<img src="https://img.shields.io/badge/NumPy-1a0033?style=for-the-badge&logo=numpy&logoColor=ffffff&labelColor=6a0dad" />
 
 <br><br>
 
-![](https://komarev.com/ghpvc/?username=ThoratSoham&label=NODES+SCANNED&color=6a0dad&style=for-the-badge)
+```
+┌──────────────────────────────────────────────┐
+│  DOMAIN            LEVEL                       │
+├──────────────────────────────────────────────┤
+│  Data Science      ████████████████░░  85%    │
+│  Machine Learning   ██████████████░░░░  75%    │
+│  Quant / Algo       ████████████░░░░░░  65%    │
+│  SQL / Databases    ███████████████░░░  80%    │
+└──────────────────────────────────────────────┘
+```
 
 </div>
 
-<br>
+<div align="center">
+
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+<!-- ===== STATS ===== -->
+<div align="center">
+
+## `03 —` SYSTEM_STATS.log
+
+<img src="https://github-readme-stats.vercel.app/api?username=ThoratSoham&show_icons=true&theme=dark&hide_border=true&bg_color=00000000&title_color=B266FF&icon_color=B266FF&text_color=e0d4ff&ring_color=6a0dad" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=dark&hide_border=true&background=00000000&stroke=6a0dad&ring=B266FF&fire=ffffff&currStreakLabel=B266FF&sideLabels=e0d4ff&sideNums=ffffff&dates=6a0dad" width="48%" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=B266FF&text_color=e0d4ff&langs_count=8" width="55%" />
+
+</div>
 
 <div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffffff,25:B266FF,50:6a0dad,75:1a0033,100:000000&height=150&section=footer" width="100%"/>
 
-<i>⚡ "Data is the signal. Code is the circuit. Creativity is the current." ⚡</i>
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+<!-- ===== TROPHIES ===== -->
+<div align="center">
+
+## `04 —` ACHIEVEMENTS.unlocked
+
+<img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" width="100%"/>
+
+</div>
+
+<div align="center">
+
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+<!-- ===== ACTIVITY GRAPH ===== -->
+<div align="center">
+
+## `05 —` NEURAL_ACTIVITY.render()
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=ThoratSoham&theme=react-dark&bg_color=00000000&color=B266FF&line=ffffff&point=ffffff&area=true&area_color=6a0dad&hide_border=true" width="100%"/>
+
+</div>
+
+<!-- ===== SNAKE ANIMATION ===== -->
+<div align="center">
+
+## `06 —` CONTRIBUTION_SNAKE.exe
+
+<img src="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+
+<sub>⚠️ Snake animation needs a one-time setup — see instructions in the comment at the bottom of this file</sub>
+
+</div>
+
+<div align="center">
+
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+<!-- ===== FUN FACT ===== -->
+<div align="center">
+
+## `07 —` EASTER_EGG.decode()
+
+```javascript
+const funFact = decode("bWwgKyBmaW5hbmNlID0gaG9tZQ==");
+console.log(funFact);
+>>> "ml + finance = home"
+```
+
+<img src="https://img.shields.io/badge/💜%20Obsessed%20with-Machine%20Learning%20%C3%97%20Financial%20Markets-000000?style=for-the-badge&labelColor=6a0dad&color=1a0033" />
+
+</div>
+
+<div align="center">
+
+![Matrix Divider](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png)
+
+</div>
+
+<!-- ===== CONNECT ===== -->
+<div align="center">
+
+## `08 —` CONNECT.socket()
+
+<a href="https://github.com/ThoratSoham">
+<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=B266FF&labelColor=1a0033" />
+</a>
+
+<br><br>
+
+<img src="https://komarev.com/ghpvc/?username=ThoratSoham&label=NEURAL+VISITS&color=6a0dad&style=for-the-badge&labelColor=000000" />
+
+<br><br>
+
+<i>"Data is the canvas. Code is the brush. Curiosity is the current."</i>
+
+<br><br>
+
+<img src="https://capsule-render.vercel.app/api?type=slice&color=0:ffffff,25:B266FF,50:6a0dad,75:1a0033,100:000000&height=150&section=footer" width="100%"/>
 
 </div>
 
 <!--
-============================================================
-  SETUP NOTE — SNAKE ANIMATION (delete once done)
-============================================================
-The snake image above needs a GitHub Action to generate it.
+=====================================================
+  SETUP NOTES FOR SOHAM (delete this block if you want)
+=====================================================
 
-1. In your ThoratSoham/ThoratSoham repo, create:
-   .github/workflows/snake.yml
+1. TROPHIES / STATS / STREAK — work automatically, just
+   make sure this file lives in a repo named exactly
+   "ThoratSoham" (matching your username) so GitHub
+   renders it on your profile page.
 
-2. Paste this content:
+2. SNAKE ANIMATION — needs a tiny one-time GitHub Actions
+   setup so it generates the "output" branch:
+   a. In your ThoratSoham repo, add this file:
+      .github/workflows/snake.yml
+   b. Paste this into it:
 
-   name: Generate Snake
-   on:
-     schedule:
-       - cron: "0 */6 * * *"
-     workflow_dispatch:
-     push:
-       branches: [ main ]
+      name: generate snake
+      on:
+        schedule:
+          - cron: "0 */12 * * *"
+        workflow_dispatch:
+        push:
+          branches:
+            - main
+      jobs:
+        generate:
+          permissions:
+            contents: write
+          runs-on: ubuntu-latest
+          steps:
+            - uses: Platane/snk/svg-only@v3
+              with:
+                github_user_name: ThoratSoham
+                outputs: |
+                  dist/github-contribution-grid-snake.svg
+                  dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            - uses: crazy-max/ghaction-github-pages@v3
+              with:
+                target_branch: output
+                build_dir: dist
+              env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-   jobs:
-     generate:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: Platane/snk@v3
-           id: snake-gif
-           with:
-             github_user_name: ThoratSoham
-             outputs: |
-               dist/github-contribution-grid-snake.svg
-               dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-         - uses: crazy-max/ghaction-github-pages@v4
-           with:
-             target_branch: output
-             build_dir: dist
-           env:
-             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+   c. Commit it, run the workflow once manually from the
+      Actions tab, and the snake will start animating
+      within a couple minutes.
 
-3. Commit + push, then run it once manually:
-   Actions tab → "Generate Snake" → Run workflow.
-   GitHub creates the "output" branch automatically, and
-   the snake will appear here within a few minutes.
-============================================================
--->
+===================================================== -->
