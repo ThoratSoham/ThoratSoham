@@ -57,6 +57,35 @@ print(me.get_status())
 
 <hr/>
 
+## 📈 Quant Trading & Stock Exchange Terminal
+
+<div align="center">
+
+<!-- NYSE / Quant Live Stock Ticker Display -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2000&pause=500&color=00FF66&center=true&vCenter=true&width=800&lines=%E2%96%B2+NVDA+%2B4.85%25+%7C+%E2%96%B2+SPY+%2B1.24%25+%7C+%E2%96%B2+BTC%2FUSD+%2B2.15%25+%7C+%E2%96%B2+ALPHA-BOT+%2B14.6%25;NYSE%3A+OPEN+%7C+NASDAQ%3A+OPEN+%7C+QUANT+MODEL%3A+EXECUTING+%E2%9A%A1;ALGO+STRATEGY%3A+MQL5+%2B+PineScript+%7C+SHARPE+RATIO%3A+2.14" alt="NYSE Stock Ticker Display" />
+</a>
+
+<br/>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/EXCHANGE-NYSE%20%7C%20NASDAQ-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC" alt="Exchange"/>
+  <img src="https://img.shields.io/badge/MARKET-OPEN%20🟢-0D0221?style=for-the-badge&logo=statuspage&logoColor=00FF66" alt="Status"/>
+  <img src="https://img.shields.io/badge/ALPHA%20MODEL-ONLINE-4C1D95?style=for-the-badge&logo=chartdotjs&logoColor=F3E8FF" alt="Alpha Model"/>
+</p>
+
+| Asset / Ticker | Market / Class | Strategy Signal | 24h Return | Execution Status |
+| :--- | :--- | :---: | :---: | :---: |
+| **`$SPY`** | S&P 500 ETF Index | **`BUY (LONG)`** | `+1.24%` 🟢 | `EXECUTED` |
+| **`$NVDA`** | Tech & AI Equity | **`BUY (STRONG)`** | `+4.85%` 🟢 | `ACTIVE` |
+| **`$BTC/USD`** | Crypto Quantitative | **`HOLD`** | `+2.15%` 🟢 | `MONITORING` |
+| **`MQL5-EA`** | Algo Grid Bot | **`AUTOTRADE`** | `+14.6% YTD` 👑 | `RUNNING` |
+| **`PINE-ALPHA`** | Trend Follower | **`EXECUTE`** | `Sharpe 2.14` ⚡ | `LIVE` |
+
+</div>
+
+<hr/>
+
 ## <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="32"> Compact Tech Arsenal
 
 <div align="center">
@@ -82,8 +111,7 @@ print(me.get_status())
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="49%" alt="Top Languages"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ThoratSoham&theme=dracula" width="49%" alt="Productive Commit Time"/>
+  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="98%" alt="Top Languages"/>
 </p>
 
 <!-- Royal Purple Activity Graph -->
@@ -121,10 +149,10 @@ print(me.get_status())
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="32"> Trophy Cabinet
+## 🧊 3D Trophy Showcase
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%" alt="GitHub Profile Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%" alt="3D GitHub Profile Trophies"/>
 </div>
 
 <hr/>
