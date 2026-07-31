@@ -136,13 +136,6 @@ me = SohamThorat()
 
 </div>
 
-<hr/>
-
-## 🧊 3D Trophy Showcase
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" width="100%" alt="3D GitHub Profile Trophies"/>
-</div>
 
 <hr/>
 
