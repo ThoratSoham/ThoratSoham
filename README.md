@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- Sci-Fi Holographic Dashboard Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=slice&color=0:0D0221,35:1A0B2E,70:6A0DAD,100:B266FF&height=170&section=header&text=%E2%9A%A1%20SOHAM%20THORAT&fontSize=48&fontColor=F3E8FF&animation=fadeIn&fontAlignY=36&desc=Engineering%20Intelligence%20%E2%80%A2%20Mining%20Alpha%20%E2%80%A2%20Architecting%20Systems&descAlignY=58&descSize=15" width="100%"/>
+<!-- Quantum Alpha Matrix Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A0014,30:1F0038,65:6A0DAD,100:D8B4FE&height=170&section=header&text=SOHAM%20THORAT%20%E2%9D%96%20QUANT_ARCHITECT&fontSize=42&fontColor=F3E8FF&animation=twinkle&fontAlignY=36&desc=%5B%20%CE%BB.ALGORITHM%20%C3%97%20STATISTICAL_ALPHA%20%C3%97%20REALTIME_SYSTEMS%20%5D&descAlignY=58&descSize=14" width="100%"/>
 
 <!-- Dynamic Animated Typing Banner -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=C084FC&center=true&vCenter=true&width=700&lines=Data+Science+%7C+Machine+Learning+%7C+Quant+Trading;Turning+Data+into+Decisions%2C+one+model+at+a+time;Building+Alpha+with+Python+%2B+Statistics;Creator+of+UPI+Shield+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+my+Digital+Realm+%F0%9F%91%91" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=700&color=D8B4FE&center=true&vCenter=true&width=750&lines=Soham+Thorat+%2F%2F+Quantitative+Software+Engineer;%5B+Data+Science+%C3%97+Machine+Learning+%C3%97+Market+Alphas+%5D;Turning+Complex+Datasets+into+High-Probability+Alpha+%F0%9F%93%98;Architect+of+UPI+Shield+%E2%80%94+Security+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+the+Quantum+Terminal+%F0%9F%91%91" alt="Typing SVG" />
 </a>
 
 <!-- Profile Views & Status Badges -->
