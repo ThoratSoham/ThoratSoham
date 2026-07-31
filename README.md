@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Royal Purple Compact Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A0B2E,35:4C1D95,70:6A0DAD,100:B266FF&height=170&section=header&text=Soham%20Thorat&fontSize=46&fontColor=F3E8FF&animation=fadeIn&fontAlignY=36&desc=Aspiring%20Computer%20Engineer%20%7C%20Data%20Scientist%20%7C%20Quant%20Enthusiast&descAlignY=58&descSize=16" width="100%"/>
+<!-- Sci-Fi Holographic Dashboard Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=slice&color=0:0D0221,35:1A0B2E,70:6A0DAD,100:B266FF&height=170&section=header&text=%E2%9A%A1%20SOHAM%20THORAT&fontSize=48&fontColor=F3E8FF&animation=fadeIn&fontAlignY=36&desc=Engineering%20Intelligence%20%E2%80%A2%20Mining%20Alpha%20%E2%80%A2%20Architecting%20Systems&descAlignY=58&descSize=15" width="100%"/>
 
 <!-- Dynamic Animated Typing Banner -->
 <a href="https://git.io/typing-svg">
