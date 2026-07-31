@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- Quantum Alpha Matrix Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0A0014,30:1F0038,65:6A0DAD,100:D8B4FE&height=170&section=header&text=SOHAM%20THORAT%20%E2%9D%96%20QUANT_ARCHITECT&fontSize=42&fontColor=F3E8FF&animation=twinkle&fontAlignY=36&desc=%5B%20%CE%BB.ALGORITHM%20%C3%97%20STATISTICAL_ALPHA%20%C3%97%20REALTIME_SYSTEMS%20%5D&descAlignY=58&descSize=14" width="100%"/>
+<!-- Royal Purple Header Banner -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A0B2E,35:4C1D95,70:6A0DAD,100:B266FF&height=160&section=header&text=Soham%20Thorat&fontSize=48&fontColor=F3E8FF&animation=fadeIn&fontAlignY=36&desc=Aspiring%20Computer%20Engineer%20%7C%20Data%20Scientist%20%7C%20Quant%20Enthusiast&descAlignY=58&descSize=16" width="100%"/>
 
-<!-- Dynamic Animated Typing Banner -->
+<!-- Dynamic Animated Typing Subtext -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=700&color=D8B4FE&center=true&vCenter=true&width=750&lines=Soham+Thorat+%2F%2F+Quantitative+Software+Engineer;%5B+Data+Science+%C3%97+Machine+Learning+%C3%97+Market+Alphas+%5D;Turning+Complex+Datasets+into+High-Probability+Alpha+%F0%9F%93%98;Architect+of+UPI+Shield+%E2%80%94+Security+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+the+Quantum+Terminal+%F0%9F%91%91" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2600&pause=700&color=C084FC&center=true&vCenter=true&width=700&lines=Data+Science+%7C+Machine+Learning+%7C+Quant+Trading;Turning+Data+into+Decisions%2C+one+model+at+a+time;Building+Alpha+with+Python+%2B+Statistics;Creator+of+UPI+Shield+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+my+Digital+Realm+%F0%9F%91%91" alt="Typing SVG" />
 </a>
 
 <!-- Profile Views & Status Badges -->
@@ -13,11 +13,6 @@
   <img src="https://komarev.com/ghpvc/?username=ThoratSoham&label=PROFILE%20VIEWS&color=6A0DAD&style=for-the-badge" alt="Profile Views"/>
   <img src="https://img.shields.io/badge/FOCUS-QUANT%20%26%20DATA%20SCIENCE-2E003E?style=for-the-badge&logo=python&logoColor=C084FC" alt="Focus"/>
   <img src="https://img.shields.io/badge/STATUS-BUILDING%20ALPHA-4C1D95?style=for-the-badge&logo=git&logoColor=F3E8FF" alt="Status"/>
-</p>
-
-<!-- Compact Dynamic Dev Quote Banner -->
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5" width="65%" alt="Dynamic Dev Quote"/>
 </p>
 
 </div>
@@ -89,67 +84,14 @@ me = SohamThorat()
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> GitHub Analytics HUD
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> Contribution Graph
 
 <div align="center">
-
-<p align="center">
-  <img src="https://github-readme-stats-phi.vercel.app/api?username=ThoratSoham&show_icons=true&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="GitHub Stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=radical&hide_border=true&background=0D0221&stroke=6A0DAD&ring=8A2BE2&fire=C084FC&currStreakLabel=C084FC&sideLabels=E6D9F5&dates=E6D9F5" width="49%" alt="GitHub Streak"/>
-</p>
-
-<!-- Reduced Size Top Languages Card -->
-<p align="center">
-  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=6" width="49%" alt="Top Languages"/>
-</p>
 
 <!-- Royal Purple Activity Graph -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ThoratSoham&theme=high-contrast&hide_border=true&bg_color=0D0221&color=C084FC&line=8A2BE2&point=F3E8FF&area=true&area_color=6A0DAD" width="100%" alt="Activity Graph"/>
 </p>
-
-</div>
-
-<hr/>
-
-## 🚀 Featured Innovations & Repositories
-
-<div align="center">
-
-<p align="center">
-  <a href="https://github.com/ThoratSoham/UPI-Shield">
-    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=UPI-Shield&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="UPI Shield"/>
-  </a>
-  <a href="https://github.com/ThoratSoham/data-science-projects">
-    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=data-science-projects&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Data Science Projects"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ThoratSoham/Josaa-Collage-Predictor">
-    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=Josaa-Collage-Predictor&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Josaa College Predictor"/>
-  </a>
-  <a href="https://github.com/ThoratSoham/Noire-Fashion">
-    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=Noire-Fashion&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Noire Fashion"/>
-  </a>
-</p>
-
-</div>
-
-
-<hr/>
-
-## <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="28"> Contribution Snake Animation
-
-<div align="center">
-
-<!--START_SECTION:waving-snake-->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/output/github-contribution-grid-snake.svg"/>
-  <img alt="Soham's Contribution Snake Grid" src="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/output/github-contribution-grid-snake-dark.svg" width="100%"/>
-</picture>
-<!--END_SECTION:waving-snake-->
 
 </div>
 
