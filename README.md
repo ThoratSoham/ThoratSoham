@@ -1,32 +1,30 @@
 <div align="center">
 
-<!-- Royal Purple Dynamic Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A0B2E,35:4C1D95,70:6A0DAD,100:B266FF&height=230&section=header&text=Soham%20Thorat&fontSize=52&fontColor=F3E8FF&animation=fadeIn&fontAlignY=38&desc=Aspiring%20Computer%20Engineer%20%7C%20Data%20Scientist%20%7C%20Quant%20Enthusiast&descAlignY=58&descSize=17" width="100%"/>
+<!-- Royal Purple Compact Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1A0B2E,35:4C1D95,70:6A0DAD,100:B266FF&height=170&section=header&text=Soham%20Thorat&fontSize=46&fontColor=F3E8FF&animation=fadeIn&fontAlignY=36&desc=Aspiring%20Computer%20Engineer%20%7C%20Data%20Scientist%20%7C%20Quant%20Enthusiast&descAlignY=58&descSize=16" width="100%"/>
 
 <!-- Dynamic Animated Typing Banner -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&duration=2800&pause=800&color=C084FC&center=true&vCenter=true&width=750&lines=Data+Science+%7C+Machine+Learning+%7C+Quant+Trading;Turning+Data+into+Decisions%2C+one+model+at+a+time;Building+Alpha+with+Python+%2B+Statistics;Creator+of+UPI+Shield+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+my+Digital+Realm+%F0%9F%91%91" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2800&pause=800&color=C084FC&center=true&vCenter=true&width=700&lines=Data+Science+%7C+Machine+Learning+%7C+Quant+Trading;Turning+Data+into+Decisions%2C+one+model+at+a+time;Building+Alpha+with+Python+%2B+Statistics;Creator+of+UPI+Shield+Middleware+%F0%9F%9B%A1%EF%B8%8F;Welcome+to+my+Digital+Realm+%F0%9F%91%91" alt="Typing SVG" />
 </a>
 
-<br/>
-
-<!-- Profile Views & Animated Status Badges -->
+<!-- Profile Views & Status Badges -->
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ThoratSoham&label=PROFILE%20VIEWS&color=6A0DAD&style=for-the-badge" alt="Profile Views"/>
   <img src="https://img.shields.io/badge/FOCUS-QUANT%20%26%20DATA%20SCIENCE-2E003E?style=for-the-badge&logo=python&logoColor=C084FC" alt="Focus"/>
   <img src="https://img.shields.io/badge/STATUS-BUILDING%20ALPHA-4C1D95?style=for-the-badge&logo=git&logoColor=F3E8FF" alt="Status"/>
 </p>
 
-<!-- Dynamic Royal Purple Tech Quote Banner -->
+<!-- Compact Dynamic Dev Quote Banner -->
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5" width="80%" alt="Dynamic Dev Quote"/>
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5" width="65%" alt="Dynamic Dev Quote"/>
 </p>
 
 </div>
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="32"> About Me
+## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="28"> About Me
 
 ```python
 class SohamThorat:
@@ -36,23 +34,16 @@ class SohamThorat:
         self.location = "Pune, Maharashtra, India 🇮🇳"
         self.core_stack = ["Python", "SQL", "R", "C++", "MQL5", "PineScript"]
         self.ml_toolkit = ["Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Jupyter"]
-        self.domain_focus = ["Quant Trading", "Algo Strategy Backtesting", "Data Analytics"]
-        self.key_project = "UPI Shield — Proactive Security Middleware for Digital Payments 🛡️"
+        self.key_project = "UPI Shield — Security Middleware for Digital Payments 🛡️"
         self.philosophy = "Where data meets discipline, alpha follows."
 
-    def get_status(self):
-        return "Unleashing creativity — one model, one strategy, one trade at a time. 👑"
-
 me = SohamThorat()
-print(me.get_status())
 ```
 
 - 🔭 **Currently Engineering:** Advanced Data Science pipelines & Quantitative Trading strategies
-- 📊 **Fascinated By:** The intersection of statistical modeling, financial markets, and machine learning
-- 🧠 **Algorithmic Systems:** Crafting automated trading bots & strategies in **MQL5** and **PineScript**
-- 🌱 **Skill Enhancement:** Deepening expertise in predictive modeling, feature engineering, and robust backtesting
-- 🛡️ **Featured Innovation:** Architected **UPI Shield** — an intelligent proactive security layer for digital payment systems
-- 💜 **Theme Standard:** Royal Purple isn't just an aesthetic — it's precision & royalty in code
+- 📊 **Fascinated By:** Statistical modeling, financial markets, and machine learning
+- 🧠 **Algorithmic Systems:** Automated trading bots in **MQL5** and **PineScript**
+- 🛡️ **Featured Innovation:** **UPI Shield** — intelligent proactive security layer for digital payments
 - ⚡ **Motto:** *Let the data argue, and the backtest decide.*
 
 <hr/>
@@ -63,10 +54,8 @@ print(me.get_status())
 
 <!-- NYSE / Quant Live Stock Ticker Display -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2000&pause=500&color=00FF66&center=true&vCenter=true&width=800&lines=%E2%96%B2+NVDA+%2B4.85%25+%7C+%E2%96%B2+SPY+%2B1.24%25+%7C+%E2%96%B2+BTC%2FUSD+%2B2.15%25+%7C+%E2%96%B2+ALPHA-BOT+%2B14.6%25;NYSE%3A+OPEN+%7C+NASDAQ%3A+OPEN+%7C+QUANT+MODEL%3A+EXECUTING+%E2%9A%A1;ALGO+STRATEGY%3A+MQL5+%2B+PineScript+%7C+SHARPE+RATIO%3A+2.14" alt="NYSE Stock Ticker Display" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=15&duration=2000&pause=500&color=00FF66&center=true&vCenter=true&width=750&lines=%E2%96%B2+NVDA+%2B4.85%25+%7C+%E2%96%B2+SPY+%2B1.24%25+%7C+%E2%96%B2+BTC%2FUSD+%2B2.15%25+%7C+%E2%96%B2+ALPHA-BOT+%2B14.6%25;NYSE%3A+OPEN+%7C+NASDAQ%3A+OPEN+%7C+QUANT+MODEL%3A+EXECUTING+%E2%9A%A1;ALGO+STRATEGY%3A+MQL5+%2B+PineScript+%7C+SHARPE+RATIO%3A+2.14" alt="NYSE Stock Ticker Display" />
 </a>
-
-<br/>
 
 <p align="center">
   <img src="https://img.shields.io/badge/EXCHANGE-NYSE%20%7C%20NASDAQ-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC" alt="Exchange"/>
@@ -74,19 +63,18 @@ print(me.get_status())
   <img src="https://img.shields.io/badge/ALPHA%20MODEL-ONLINE-4C1D95?style=for-the-badge&logo=chartdotjs&logoColor=F3E8FF" alt="Alpha Model"/>
 </p>
 
-| Asset / Ticker | Market / Class | Strategy Signal | 24h Return | Execution Status |
+| Asset / Ticker | Market Class | Strategy Signal | 24h Return | Execution Status |
 | :--- | :--- | :---: | :---: | :---: |
-| **`$SPY`** | S&P 500 ETF Index | **`BUY (LONG)`** | `+1.24%` 🟢 | `EXECUTED` |
+| **`$SPY`** | S&P 500 ETF | **`BUY (LONG)`** | `+1.24%` 🟢 | `EXECUTED` |
 | **`$NVDA`** | Tech & AI Equity | **`BUY (STRONG)`** | `+4.85%` 🟢 | `ACTIVE` |
-| **`$BTC/USD`** | Crypto Quantitative | **`HOLD`** | `+2.15%` 🟢 | `MONITORING` |
+| **`$BTC/USD`** | Crypto Quant | **`HOLD`** | `+2.15%` 🟢 | `MONITORING` |
 | **`MQL5-EA`** | Algo Grid Bot | **`AUTOTRADE`** | `+14.6% YTD` 👑 | `RUNNING` |
-| **`PINE-ALPHA`** | Trend Follower | **`EXECUTE`** | `Sharpe 2.14` ⚡ | `LIVE` |
 
 </div>
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="32"> Compact Tech Arsenal
+## <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="28"> Compact Tech Arsenal
 
 <div align="center">
 
@@ -94,14 +82,14 @@ print(me.get_status())
 | :--- | :--- |
 | **💻 Languages** | ![Python](https://img.shields.io/badge/Python-1A0B2E?style=for-the-badge&logo=python&logoColor=C084FC) ![SQL](https://img.shields.io/badge/SQL-1A0B2E?style=for-the-badge&logo=postgresql&logoColor=C084FC) ![R](https://img.shields.io/badge/R-1A0B2E?style=for-the-badge&logo=r&logoColor=C084FC) ![C++](https://img.shields.io/badge/C++-1A0B2E?style=for-the-badge&logo=cplusplus&logoColor=C084FC) ![JavaScript](https://img.shields.io/badge/JavaScript-1A0B2E?style=for-the-badge&logo=javascript&logoColor=C084FC) ![HTML5](https://img.shields.io/badge/HTML5-1A0B2E?style=for-the-badge&logo=html5&logoColor=C084FC) ![CSS3](https://img.shields.io/badge/CSS3-1A0B2E?style=for-the-badge&logo=css3&logoColor=C084FC) |
 | **📊 Data Science & ML** | ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1A0B2E?style=for-the-badge&logo=scikitlearn&logoColor=C084FC) ![Pandas](https://img.shields.io/badge/Pandas-1A0B2E?style=for-the-badge&logo=pandas&logoColor=C084FC) ![NumPy](https://img.shields.io/badge/NumPy-1A0B2E?style=for-the-badge&logo=numpy&logoColor=C084FC) ![Matplotlib](https://img.shields.io/badge/Matplotlib-1A0B2E?style=for-the-badge&logo=plotly&logoColor=C084FC) ![Jupyter](https://img.shields.io/badge/Jupyter-1A0B2E?style=for-the-badge&logo=jupyter&logoColor=C084FC) |
-| **📈 Quant & Algo Trading** | ![MQL5](https://img.shields.io/badge/MQL5-1A0B2E?style=for-the-badge&logo=metatrader5&logoColor=C084FC) ![PineScript](https://img.shields.io/badge/PineScript-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC) ![MetaTrader](https://img.shields.io/badge/MetaTrader-1A0B2E?style=for-the-badge&logo=metatrader5&logoColor=C084FC) ![TradingView](https://img.shields.io/badge/TradingView-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC) |
-| **🛠️ Tools & Environments** | ![Git](https://img.shields.io/badge/Git-1A0B2E?style=for-the-badge&logo=git&logoColor=C084FC) ![GitHub](https://img.shields.io/badge/GitHub-1A0B2E?style=for-the-badge&logo=github&logoColor=C084FC) ![VS Code](https://img.shields.io/badge/VS%20Code-1A0B2E?style=for-the-badge&logo=visualstudiocode&logoColor=C084FC) ![Linux](https://img.shields.io/badge/Linux-1A0B2E?style=for-the-badge&logo=linux&logoColor=C084FC) |
+| **📈 Quant & Trading** | ![MQL5](https://img.shields.io/badge/MQL5-1A0B2E?style=for-the-badge&logo=metatrader5&logoColor=C084FC) ![PineScript](https://img.shields.io/badge/PineScript-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC) ![MetaTrader](https://img.shields.io/badge/MetaTrader-1A0B2E?style=for-the-badge&logo=metatrader5&logoColor=C084FC) ![TradingView](https://img.shields.io/badge/TradingView-1A0B2E?style=for-the-badge&logo=tradingview&logoColor=C084FC) |
+| **🛠️ Tools & DevOps** | ![Git](https://img.shields.io/badge/Git-1A0B2E?style=for-the-badge&logo=git&logoColor=C084FC) ![GitHub](https://img.shields.io/badge/GitHub-1A0B2E?style=for-the-badge&logo=github&logoColor=C084FC) ![VS Code](https://img.shields.io/badge/VS%20Code-1A0B2E?style=for-the-badge&logo=visualstudiocode&logoColor=C084FC) ![Linux](https://img.shields.io/badge/Linux-1A0B2E?style=for-the-badge&logo=linux&logoColor=C084FC) |
 
 </div>
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="32"> GitHub Analytics HUD
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> GitHub Analytics HUD
 
 <div align="center">
 
@@ -110,8 +98,9 @@ print(me.get_status())
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=radical&hide_border=true&background=0D0221&stroke=6A0DAD&ring=8A2BE2&fire=C084FC&currStreakLabel=C084FC&sideLabels=E6D9F5&dates=E6D9F5" width="49%" alt="GitHub Streak"/>
 </p>
 
+<!-- Reduced Size Top Languages Card -->
 <p align="center">
-  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="98%" alt="Top Languages"/>
+  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=6" width="49%" alt="Top Languages"/>
 </p>
 
 <!-- Royal Purple Activity Graph -->
@@ -152,12 +141,12 @@ print(me.get_status())
 ## 🧊 3D Trophy Showcase
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" width="100%" alt="3D GitHub Profile Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=ThoratSoham&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" width="100%" alt="3D GitHub Profile Trophies"/>
 </div>
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="32"> Contribution Snake Animation
+## <img src="https://media.giphy.com/media/WFZvB7VIXBgiz3oDXE/giphy.gif" width="28"> Contribution Snake Animation
 
 <div align="center">
 
@@ -173,7 +162,7 @@ print(me.get_status())
 
 <hr/>
 
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="32"> Connect With Me
+## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> Connect With Me
 
 <div align="center">
 
@@ -194,12 +183,10 @@ print(me.get_status())
 
 </div>
 
-<br/>
-
 <div align="center">
 
-<!-- Royal Purple Waving Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:B266FF,35:6A0DAD,70:4C1D95,100:1A0B2E&height=120&section=footer" width="100%"/>
+<!-- Royal Purple Compact Waving Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:B266FF,35:6A0DAD,70:4C1D95,100:1A0B2E&height=90&section=footer" width="100%"/>
 
 > **"Unleashing Creativity — one dataset, one strategy, one line of code at a time." 👑**
 
