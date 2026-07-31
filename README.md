@@ -76,12 +76,12 @@ print(me.get_status())
 <div align="center">
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ThoratSoham&show_icons=true&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5&ring_color=6A0DAD&border_color=3B0764" width="49%" alt="GitHub Stats"/>
+  <img src="https://github-readme-stats-phi.vercel.app/api?username=ThoratSoham&show_icons=true&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="GitHub Stats"/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ThoratSoham&theme=radical&hide_border=true&background=0D0221&stroke=6A0DAD&ring=8A2BE2&fire=C084FC&currStreakLabel=C084FC&sideLabels=E6D9F5&dates=E6D9F5" width="49%" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="49%" alt="Top Languages"/>
+  <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="49%" alt="Top Languages"/>
 </p>
 
 <!-- Royal Purple Activity Graph -->
@@ -101,19 +101,19 @@ print(me.get_status())
 
 <p align="center">
   <a href="https://github.com/ThoratSoham/UPI-Shield">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ThoratSoham&repo=UPI-Shield&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="UPI Shield"/>
+    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=UPI-Shield&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="UPI Shield"/>
   </a>
   <a href="https://github.com/ThoratSoham/data-science-projects">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ThoratSoham&repo=data-science-projects&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Data Science Projects"/>
+    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=data-science-projects&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Data Science Projects"/>
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/ThoratSoham/Josaa-Collage-Predictor">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ThoratSoham&repo=Josaa-Collage-Predictor&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Josaa College Predictor"/>
+    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=Josaa-Collage-Predictor&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Josaa College Predictor"/>
   </a>
   <a href="https://github.com/ThoratSoham/Noire-Fashion">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ThoratSoham&repo=Noire-Fashion&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Noire Fashion"/>
+    <img src="https://github-readme-stats-phi.vercel.app/api/pin/?username=ThoratSoham&repo=Noire-Fashion&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&icon_color=8A2BE2&text_color=E6D9F5" width="49%" alt="Noire Fashion"/>
   </a>
 </p>
 
