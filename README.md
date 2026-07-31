@@ -17,6 +17,11 @@
   <img src="https://img.shields.io/badge/STATUS-BUILDING%20ALPHA-4C1D95?style=for-the-badge&logo=git&logoColor=F3E8FF" alt="Status"/>
 </p>
 
+<!-- Dynamic Royal Purple Tech Quote Banner -->
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5" width="80%" alt="Dynamic Dev Quote"/>
+</p>
+
 </div>
 
 <hr/>
@@ -78,6 +83,7 @@ print(me.get_status())
 
 <p align="center">
   <img src="https://github-readme-stats-phi.vercel.app/api/top-langs/?username=ThoratSoham&layout=compact&theme=radical&hide_border=true&bg_color=0D0221&title_color=C084FC&text_color=E6D9F5&langs_count=8" width="49%" alt="Top Languages"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ThoratSoham&theme=dracula" width="49%" alt="Productive Commit Time"/>
 </p>
 
 <!-- Royal Purple Activity Graph -->
