@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ThoratSoham/ThoratSoham/main/assets/ascii_globe.svg" width="420"/>
+<img src="https://cdn.jsdelivr.net/gh/ThoratSoham/ThoratSoham@main/assets/ascii_globe.svg" width="420"/>
 
 # Soham Thorat
 
