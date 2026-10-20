@@ -1,0 +1,35 @@
+[
+  {
+    "id": "text-humaniser",
+    "title": "TextHumaniser",
+    "description": "Offline, rule-based NLP pipeline that restructures long-form text while preserving meaning. Classical NLP only, no paid APIs.",
+    "tags": ["Python", "spaCy", "WordNet", "NLTK"],
+    "status": "In progress",
+    "statusKey": "status.progress",
+    "repo": "https://github.com/ThoratSoham/TextHumaniser",
+    "demo": null,
+    "stars": 18
+  },
+  {
+    "id": "telco-churn",
+    "title": "Telco Customer Churn Prediction",
+    "description": "End-to-end churn classifier with XGBoost and Random Forest, SMOTE for class imbalance, randomized hyperparameter search and SHAP explainability.",
+    "tags": ["Python", "scikit-learn", "XGBoost", "SHAP"],
+    "status": "Complete",
+    "statusKey": "status.done",
+    "repo": "https://github.com/ThoratSoham/data-science-projects",
+    "demo": null,
+    "stars": null
+  },
+  {
+    "id": "mentor-marketplace",
+    "title": "Mentor Marketplace",
+    "description": "Mentor and mentee marketplace MVP with passwordless magic-link login, role selection, protected dashboards and row-level security.",
+    "tags": ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+    "status": "MVP in progress",
+    "statusKey": "status.mvp",
+    "repo": "https://github.com/ThoratSoham/Consult",
+    "demo": null,
+    "stars": null
+  }
+]

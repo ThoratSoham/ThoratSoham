@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "one-site-edits-and-code",
+    "date": null,
+    "draft": true,
+    "title": {
+      "en": "One site for edits and code",
+      "ja": "編集もコードも、ひとつのサイトに"
+    },
+    "body": {
+      "en": "I edit videos and design posters. I also build web apps. For a long time those lived in separate corners. This site puts them side by side, because both start the same way: a rough idea and an unforgiving deadline.",
+      "ja": "私は動画を編集し、ポスターをデザインします。ウェブアプリも作ります。これまでは別々の場所にありましたが、このサイトでは並べて見せます。どちらも、ざっくりしたアイデアと容赦ない締め切りから始まるからです。"
+    }
+  },
+  {
+    "slug": "building-with-ai-tools",
+    "date": null,
+    "draft": true,
+    "title": {
+      "en": "Building with AI tools without losing the plot",
+      "ja": "AIツールに使われずに作る"
+    },
+    "body": {
+      "en": "I build full-stack apps with Claude Code, Gemini and ChatGPT. My rule: I decide what gets built, I read the parts that matter, and I can explain every project on this site. The tools type fast. The judgment is mine.",
+      "ja": "Claude Code、Gemini、ChatGPTでフルスタックのアプリを作っています。ルールはひとつ。何を作るかは自分で決め、大事な部分は自分で読み、このサイトのすべてのプロジェクトを説明できること。ツールは速く打てますが、判断は私のものです。"
+    }
+  },
+  {
+    "slug": "what-i-learn-next",
+    "date": null,
+    "draft": true,
+    "title": {
+      "en": "What I am learning next",
+      "ja": "次に学ぶこと"
+    },
+    "body": {
+      "en": "Data science, machine learning, deep learning and computer vision are loading. I will post projects when they have real results, and not before.",
+      "ja": "データサイエンス、機械学習、ディープラーニング、コンピュータビジョンは読み込み中です。本物の成果が出たときに公開します。それまでは公開しません。"
+    }
+  }
+]

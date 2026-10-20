@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Kinetic Velocity Reel",
+    "role": "Lead Video Editor",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-1.webp",
+    "video": "portfolio_vids/Portfolio_vid_1.mp4"
+  },
+  {
+    "id": 2,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "High-Retention Hook Cut",
+    "role": "Motion Graphics & Pacing",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-2.webp",
+    "video": "portfolio_vids/Portfolio_vid_2.mp4"
+  },
+  {
+    "id": 3,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Cinematic Brand Narrative",
+    "role": "Creative Direction & Editing",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-3.webp",
+    "video": "portfolio_vids/Portfolio_vid_3.mp4"
+  },
+  {
+    "id": 4,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Dynamic Visual Flow Reel",
+    "role": "Sound Design & Rhythm Cut",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-4.webp",
+    "video": "portfolio_vids/Portfolio_vid_4.mp4"
+  },
+  {
+    "id": 5,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Fast-Paced Social Retention",
+    "role": "Short-Form Video Specialist",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-5.webp",
+    "video": "portfolio_vids/Portfolio_vid_5.mp4"
+  },
+  {
+    "id": 6,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Premium Commercial Cut",
+    "role": "Color Grading & Assembly",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-6.webp",
+    "video": "portfolio_vids/Portfolio_vid_6.mp4"
+  },
+  {
+    "id": 7,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Visual FX & Motion Reel",
+    "role": "VFX & Compositing",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-7.webp",
+    "video": "portfolio_vids/Portfolio_vid_7.mp4"
+  },
+  {
+    "id": 8,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Vertical Anamorphic Motion",
+    "role": "9:16 Kinetic Video Design",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-8.webp",
+    "video": "portfolio_vids/Portfolio_vid_8.mp4"
+  },
+  {
+    "id": 9,
+    "url": "https://www.instagram.com/sohamthorat_/",
+    "type": "reel",
+    "title": "Glitch & Typography Mastercut",
+    "role": "Typography & Sound Sync",
+    "category": "video",
+    "year": "2026",
+    "cover": "assets/images/portfolio-vid-9.webp",
+    "video": "portfolio_vids/Portfolio_vid_9.mp4"
+  }
+]

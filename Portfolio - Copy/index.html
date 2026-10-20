@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the logo's own T, white on the page's own ground -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#090514" />
+    <!-- How the link unfurls when it is shared, and what a search engine reads -->
+    <meta name="description" content="THORAT is an interactive portfolio exploring format, rhythm, high-retention video editing, and full-stack creative technology by Soham Thorat." />
+    <meta property="og:description" content="THORAT is an interactive portfolio exploring format, rhythm, high-retention video editing, and full-stack creative technology by Soham Thorat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Soham Thorat Portfolio" />
+    <meta property="og:title" content="THORAT — Format | Soham Thorat Portfolio" />
+    <meta property="og:url" content="https://thoratsoham.github.io/" />
+    <meta property="og:image" content="https://thoratsoham.github.io/assets/images/og-image.jpg" />
+    <meta property="og:image:width" content="1440" />
+    <meta property="og:image:height" content="754" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="THORAT — Format | Soham Thorat Portfolio" />
+    <meta name="twitter:description" content="THORAT is an interactive portfolio exploring format, rhythm, high-retention video editing, and full-stack creative technology by Soham Thorat." />
+    <meta name="twitter:image" content="https://thoratsoham.github.io/assets/images/og-image.jpg" />
+
+    <!-- The face every line on the page is set in. Without this it is not found
+         until the stylesheet has been fetched and read, which is two round
+         trips in, and the text waits that long before it can be drawn. -->
+    <link
+      rel="preload"
+      href="fonts/ObysSans-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>THORAT — Format | Soham Thorat Portfolio</title>
+    <!-- The one thing that has to be true before any stylesheet arrives: the
+         page opens white and empty, which is what the preloader's own curtain
+         shows anyway. Without it the markup is briefly drawn raw — a black logo
+         and an unstyled nav — because in development the styles come in through
+         the script. The stylesheet turns this off on its first rule. -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #090514;
+      }
+      #app {
+        visibility: hidden;
+      }
+    </style>
+    <script type="module" crossorigin src="js/format.js"></script>
+    <script type="module" src="js/scene_scroll.js"></script>
+    <script src="js/deal_wheel.js"></script>
+    <script type="module" src="js/interactive_enhancements.js"></script>
+    <link rel="stylesheet" crossorigin href="css/format.css">
+  </head>
+  <body>
+    <div id="app">
+      <!-- the white the page opens on, drawn back upward to uncover the ground -->
+      <div class="curtain" aria-hidden="true"></div>
+
+      <div class="logo-fixed">
+        <!-- The 14 shapes group into the six letters, each free to ride up on its
+             own. The SVG viewport is the mask: below y=215 a letter is simply not
+             drawn, so it climbs into view out of nothing. -->
+        <svg class="logo-svg" viewBox="0 0 1401 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="THORAT">
+          <g class="logo-letter" data-letter="T">
+            <path d="M29.860 0.000H0.000V46.138V109.865H29.860V214.167H109.700V0.000H29.860Z" fill="currentColor"/>
+            <path d="M197.560 0.000H117.720V46.138V109.865V214.167H197.560V109.865H227.010V46.138V0.000H197.560Z" fill="currentColor"/>
+          </g>
+          <g class="logo-letter" data-letter="H">
+            <path d="M234.453 46.138V214.085H298.015V0H280.510L234.453 46.138Z" fill="currentColor"/>
+            <path d="M397.901 0V214.085H461.463V46.138L415.325 0H397.901Z" fill="currentColor"/>
+            <path d="M298.015 82.000H397.901V140.000H298.015Z" fill="currentColor"/>
+          </g>
+          <g class="logo-letter" data-letter="O">
+            <path d="M469.484 46.138V167.947L515.541 214.085H579.185V0.000H515.541L469.484 46.138Z" fill="currentColor"/>
+            <path d="M586.793 0.000V214.085H650.356L696.494 167.947V46.138L650.356 0.000H586.793Z" fill="currentColor"/>
+          </g>
+          <g class="logo-letter" data-letter="R">
+            <path d="M703.934 0.000V214.167H750.073H813.635V0.000H750.073H703.934Z" fill="currentColor"/>
+            <path d="M821.649 0.000V134.488H930.369V54.482L875.559 0.000H821.649Z" fill="currentColor"/>
+            <path d="M821.649 143.569V214.658H930.369L859.525 143.569H821.649Z" fill="currentColor"/>
+          </g>
+          <g class="logo-letter" data-letter="A">
+            <path d="M938.965 46.1383V214.167H985.021H1048.67V0H985.021L938.965 46.1383Z" fill="currentColor"/>
+            <path d="M1056.27 0V214.167H1119.84H1165.97V46.1383L1119.84 0H1056.27Z" fill="currentColor"/>
+          </g>
+          <g class="logo-letter" data-letter="T">
+            <path d="M1203.85 0H1173.99V46.1383V109.865H1203.85V214.167H1283.69V0H1203.85Z" fill="currentColor"/>
+            <path d="M1371.55 0H1291.71V46.1383V109.865V214.167H1371.55V109.865H1401V46.1383V0H1371.55Z" fill="currentColor"/>
+          </g>
+        </svg>
+      </div>
+
+      <div class="screen">
+        <nav class="nav">
+          <span class="nav__bar" aria-hidden="true"></span>
+          <span class="nav__box" aria-hidden="true"></span>
+
+          <!-- every line sits in its own mask so it can climb into place -->
+          <p class="nav__credits">
+            <span class="line"><span class="line__in">Thorat — <a class="u" href="#about">Soham Thorat</a> Portfolio &amp; <a class="u" href="#tech-lab">Tech Lab</a></span></span>
+          </p>
+
+          <p class="nav__season">
+            <span class="line"><span class="line__in"><a class="u" href="#creative-studio">Creative Studio</a> · <a class="u" href="creative.html" style="color: #f2b134; font-weight: 700;">Creative Stash ↗</a> · <a class="u" href="thumbnails.html" style="color: #c084fc;">Thumbnails ↗</a> · <a class="u" href="#tech-lab">Tech Lab</a> · <a class="u" href="#about">About</a> · <a class="u" href="#contact">Contact</a></span></span>
+            <span class="line"><span class="line__in">Video Editing, Motion Design &amp; Full-Stack AI Builds</span></span>
+          </p>
+        </nav>
+      </div>
+
+      <!-- The short nav. It is the header's own line with the middle taken out —
+           no season block and no plate under it — and it comes down from the top
+           edge whenever the page is being read backwards. Its own element rather
+           than the header moved: the header is fixed at the top of the document
+           and the preloader walks it into place, and a thing that has to appear
+           and disappear on a rule of its own should not be the same thing. -->
+      <nav class="back-nav" aria-hidden="true">
+        <span class="back-nav__bar" aria-hidden="true"></span>
+
+        <p class="back-nav__credits">
+          Thorat — <a class="u" href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener">Soham Thorat</a> Portfolio
+          &amp; <a class="u" href="https://github.com/ThoratSoham" target="_blank" rel="noopener">Creative Lab</a>
+        </p>
+      </nav>
+
+      <!-- The filmstrip is a stand-in for the site, not the site: it rides down
+           and swells until its top card lands exactly where the real first block
+           sits, at which point the real one takes over and this is dropped. -->
+      <!-- clipped to the screen: the strip is 7760 tall and only ever a
+           screenful of it is in view, so there is no sense painting the rest -->
+      <div class="strip-view" aria-hidden="true">
+        <div class="strip">
+          <img class="strip__art" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAwIiBoZWlnaHQ9Ijc3NjAiIHZpZXdCb3g9IjAgMCAxNDAwIDc3NjAiIGZpbGw9Im5vbmUiPgogIDwhLS0KICAgIFRoZSBwcmVsb2FkZXIncyBmaWxtc3RyaXA6IHRoZSBzaXRlJ3MgYmxvY2tzIHJlZHVjZWQgdG8gdGhlaXIgc2lsaG91ZXR0ZXMuCiAgICBBc3NlbWJsZWQgZnJvbSB0aGUgZGVzaWduJ3Mgb3duIGdlb21ldHJ5IHJhdGhlciB0aGFuIGV4cG9ydGVkIGZsYXQsIHNvIGl0CiAgICBzdGF5cyBzaGFycCBhdCBhbnkgem9vbSBhbmQgd2VpZ2hzIGFsbW9zdCBub3RoaW5nLgoKICAgIE9uZSBydW4gb2YgYmxvY2tzIGlzIGRlZmluZWQgb25jZSBhbmQgcGxhY2VkIHR3aWNlLCAzODgzIGFwYXJ0LCB3aGljaCBpcyB0aGUKICAgIGxvb3AgdGhlIGZpbGUgcmVwZWF0cyBvbi4gR3JvdXAgMjI4IHNpdHMgYXQgdGhlIHZlcnkgdG9wLCA1MzMgYWNyb3NzIGFuZAogICAgbm90aGluZyBkb3duIOKAlCBpdCBpcyB0aGUgY2FyZCB0aGF0IGxhbmRzIG9uIHRoZSByZWFsIGZpcnN0IGJsb2NrLgogIC0tPgogIDxkZWZzPgogICAgPGcgaWQ9InJ1biIgZmlsbD0iIzZiMjFhOCI+CiAgICAgIDwhLS0gR3JvdXAgMjI4IOKAlCB0aGUgZmlyc3QgYmxvY2sgLS0+CiAgICAgIDxyZWN0IHg9IjUzMyIgeT0iMCIgd2lkdGg9IjMzNSIgaGVpZ2h0PSI0MjYiIC8+CiAgICAgIDxjaXJjbGUgY3g9IjkwOCIgY3k9IjM0IiByPSIzNCIgLz4KICAgICAgPHJlY3QgeD0iODc0IiB5PSI3MCIgd2lkdGg9IjY4IiBoZWlnaHQ9IjY4IiAvPgoKICAgICAgPCEtLSBHcm91cCAyMjkg4oCUIHdpZGUgYmFyIHdpdGggYSB0YWIgZWl0aGVyIHNpZGUgLS0+CiAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgNDMyKSI+CiAgICAgICAgPHJlY3QgeD0iMTc4IiB5PSIwIiB3aWR0aD0iMTA0NSIgaGVpZ2h0PSI0NDgiIC8+CiAgICAgICAgPHJlY3QgeD0iMCIgeT0iMTQ1IiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjEyMiIgLz4KICAgICAgICA8cmVjdCB4PSIxMjI5IiB5PSIxNDUiIHdpZHRoPSIxNzEiIGhlaWdodD0iMTIyIiAvPgogICAgICA8L2c+CgogICAgICA8IS0tIGJsb2NrIGFib3ZlIGEgZGlzYywgd2l0aCBzaXggb2YgZGF5bGlnaHQgYmV0d2VlbiB0aGVtLiBUaGUgZmlsZSB0dXJucwogICAgICAgICAgIHRoaXMgYmxvY2sgYSBxdWFydGVyLCBhbmQgZ2l2ZXMgYSB0dXJuZWQgbm9kZSBpdHMgZm9vdCByYXRoZXIgdGhhbiBpdHMKICAgICAgICAgICB0b3AgY29ybmVyIOKAlCByZWFkIGFzIGEgdG9wIGl0IGxhbmRzIG9uIHRoZSBkaXNjIGFuZCBjbG9zZXMgdGhlIGdhcC4gLS0+CiAgICAgIDxyZWN0IHg9IjUzMyIgeT0iODg2IiB3aWR0aD0iMzM1IiBoZWlnaHQ9IjIyNiIgLz4KICAgICAgPGNpcmNsZSBjeD0iNzAwLjUiIGN5PSIxMzc0LjUiIHI9IjI1Ni41IiAvPgoKICAgICAgPCEtLSB1cHJpZ2h0IGJsb2NrIC0tPgogICAgICA8cmVjdCB4PSI1MzIiIHk9IjE2MzYiIHdpZHRoPSIzMzUiIGhlaWdodD0iNDI2IiAvPgoKICAgICAgPCEtLSBkb3QsIGJhciwgcGlsbCAtLT4KICAgICAgPGNpcmNsZSBjeD0iNzkiIGN5PSIyMTQ3IiByPSI3OSIgLz4KICAgICAgPHJlY3QgeD0iMTYzIiB5PSIyMDY4IiB3aWR0aD0iNTM0IiBoZWlnaHQ9IjE1OCIgLz4KICAgICAgPHJlY3QgeD0iNzA0IiB5PSIyMDY4IiB3aWR0aD0iNjk2IiBoZWlnaHQ9IjE1OCIgcng9Ijc5IiAvPgoKICAgICAgPCEtLSBHcm91cCAyMzAg4oCUIHRoZSBwYWlyIG9mIGRpc2NzIC0tPgogICAgICA8Y2lyY2xlIGN4PSIzNDguNSIgY3k9IjI1ODAuNSIgcj0iMzQ4LjUiIC8+CiAgICAgIDxjaXJjbGUgY3g9IjEwNTEuNSIgY3k9IjI1ODAuNSIgcj0iMzQ4LjUiIC8+CgogICAgICA8IS0tIHRoZSB3ZWRnZSAtLT4KICAgICAgPHBhdGgKICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNDggMjkzNSkiCiAgICAgICAgZD0iTTcwNCA1MS4xODM2TDM4Mi4xNCA2MDguNjY0SDMyMS4zOTRMMCA1MS45OTIyTDMwLjAxNzYgMEg2NzQuNDQ5TDcwNCA1MS4xODM2WiIKICAgICAgLz4KCiAgICAgIDwhLS0gYmxvY2sgd2l0aCB0aGUgaGFsZi1kaXNjIGJpdHRlbiBvdXQgLS0+CiAgICAgIDxwYXRoCiAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ4IDM1NTApIgogICAgICAgIGQ9Ik03MDUgMFYzMjdIMFYwSDcwNVpNMzUzIDI4My45OTZDNDE5LjMyIDI4My43MjcgNDczIDIyOS44ODQgNDczIDE2My41QzQ3MyA5Ny4xMTY1IDQxOS4zMiA0My4yNzI0IDM1MyA0My4wMDI5VjI4My45OTZaIgogICAgICAvPgogICAgPC9nPgogIDwvZGVmcz4KCiAgPHVzZSBocmVmPSIjcnVuIiAvPgogIDx1c2UgaHJlZj0iI3J1biIgeT0iMzg4MyIgLz4KPC9zdmc+Cg==" alt="" />
+        </div>
+      </div>
+
+      <!-- Group 228, on the spot the strip hands over to: 163 below the nav -->
+      <article class="block-one" id="home">
+        <div class="block-one__card">
+          <div class="block-one__photo">
+            <video src="portfolio_vids/Portfolio_vid_1.mp4" poster="portfolio_img/SaveClip.App_735801647_18099442373521521_5640099348570135804_n.jpg" autoplay loop muted playsinline></video>
+          </div>
+
+          <div class="block-one__body">
+            <p class="hero-kicker">(Video Editor &amp; Creative Developer)</p>
+            <h1 class="hero-name">SOHAM THORAT</h1>
+            <p class="hero-headline">Video editor and designer who also ships code.</p>
+            
+            <div class="hero-badge-wrap">
+              <span class="hero-sticker">Deep learning &amp; ML: loading...</span>
+            </div>
+
+            <div class="hero-actions">
+              <a href="mailto:djsoham02@gmail.com?subject=Creative%20work%20enquiry" class="link-arrow" id="hero-hire">Hire me <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+              <a href="#tech-lab" class="link-arrow" id="hero-work">See my work <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+            </div>
+
+            <div class="hero-divider"></div>
+
+            <div class="hero-specs">
+              <div class="hero-spec-row">
+                <span class="hero-spec-no">01</span>
+                <span class="hero-spec-title">Creative Studio</span>
+                <span class="hero-spec-desc">Retention Reels &amp; Motion</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-no">02</span>
+                <span class="hero-spec-title">Tech Lab</span>
+                <span class="hero-spec-desc">Full-Stack &amp; ML Projects</span>
+              </div>
+              <div class="hero-spec-row">
+                <span class="hero-spec-no">03</span>
+                <span class="hero-spec-title">Experience</span>
+                <span class="hero-spec-desc">MLSC &amp; GDGoC NMIET</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <span class="block-one__round" aria-hidden="true">
+          <img class="face__bg-img" src="portfolio_img/SaveClip.App_758368228_17897899863559531_7967120900980634937_n.jpg" alt="Soham Portfolio" />
+          <svg class="face" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="face__disc" cx="34" cy="34" r="34" />
+            <g class="face__ticks">
+              <path d="M33.9961 4L33.9961 -7.94663e-09" />
+              <path d="M64 33.9961L68 33.9961" />
+              <path d="M34.0039 64L34.0039 68" />
+              <path d="M4 34.0039L1.39091e-08 34.0039" />
+              <path d="M48.9961 8.01758L50.9961 4.55348" />
+              <path d="M59.9805 48.9971L63.4446 50.9971" />
+              <path d="M19.0039 59.9824L17.0039 63.4465" />
+              <path d="M8.01953 19.0029L4.55543 17.0029" />
+              <path d="M18.9961 8.02148L16.9961 4.55738" />
+              <path d="M59.9766 18.999L63.4407 16.999" />
+              <path d="M49.0039 59.9785L51.0039 63.4426" />
+              <path d="M8.02344 49.001L4.55934 51.001" />
+            </g>
+            <circle class="face__ball face__ball--second" r="2" />
+            <circle class="face__ball face__ball--minute" r="3" />
+            <circle class="face__ball face__ball--hour" r="5" />
+          </svg>
+        </span>
+        <span class="block-one__square" aria-hidden="true">
+          <img src="my_sticker.png" alt="Soham Thorat Sticker" style="object-fit:contain; padding: 4px;" />
+        </span>
+      </article>
+
+      <!-- NEW BLOCKS: everything sits at the design's own page coordinates, the
+           way the header and first block already do. Starts 6 under block one. -->
+
+      <!-- Group 21 — the ground the lower blocks stand on, bleeding past both edges -->
+      <div class="ground" aria-hidden="true">
+        <img src="assets/flower-CVKgWteV.webp" alt="" />
+      </div>
+
+      <!-- Group 121 — Horizontal -->
+      <article class="wide" id="creative-studio">
+        <div class="wide__photo">
+          <video src="portfolio_vids/Portfolio_vid_2.mp4" poster="portfolio_img/SaveClip.App_741395706_18099442355521521_1424516651156152427_n.jpg" autoplay loop muted playsinline></video>
+        </div>
+
+        <div class="wide__content">
+          <p class="wide-kicker">02 &middot; (Creative Studio)</p>
+          <h2 class="wide-heading">Motion &amp; Video Editing</h2>
+          <p class="wide-statement">
+            I turn rough ideas into reels, posters and thumbnails people actually stop scrolling for.
+          </p>
+          <div class="wide-metric-pill">
+            <span>12K+ best reel views</span>
+            <span>&bull;</span>
+            <span>140+ Instagram community</span>
+          </div>
+          <div class="wide-actions">
+            <a href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener noreferrer" class="link-arrow" id="studio-instagram">See it on Instagram <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+            <a href="mailto:djsoham02@gmail.com?subject=Project%20Inquiry%20-%20Creative%20Work" class="link-arrow" id="studio-request">Request an edit <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="wide__reel" aria-hidden="true">
+          <div class="wide__reel-in">
+            <span>High-Retention Reels</span><span>YouTube Long-Form</span><span>Commercial Edits</span><span>Sound Design</span><span>Color Grading</span><span>Motion Graphics</span>
+            <span>High-Retention Reels</span><span>YouTube Long-Form</span><span>Commercial Edits</span><span>Sound Design</span><span>Color Grading</span><span>Motion Graphics</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Group 127 — HRZNTL -->
+      <div class="tag">
+        
+        <img src="kid/tag.webp" class="kid kid--tag"  alt="" aria-hidden="true" />
+        <div class="tag__cut" style="--x: 44; --y: 0; --w: 84; --h: 122; --ix: -72; --iy: -122"></div>
+        <div class="tag__cut" style="--x: 0; --y: 88; --w: 171; --h: 34; --ix: -25; --iy: -174"></div>
+        <p class="tag__kicker">(Format)</p>
+        <p class="tag__word">MOTION</p>
+      </div>
+
+      <!-- Group 126 — the same card turned on its side -->
+      <div class="side">
+        
+        <img src="kid/side.webp" class="kid kid--side"  alt="" aria-hidden="true" />
+        <div class="side__cut" style="--x: 47; --y: 0; --w: 83; --h: 122; --ix: -73; --iy: -122"></div>
+        <div class="side__cut" style="--x: 88; --y: 34; --w: 84; --h: 122; --ix: -72; --iy: -122"></div>
+        <p class="side__title"><span>Post-Production</span></p>
+        <p class="side__kicker"><span>(Format)</span></p>
+        <p class="side__index"><span>2</span></p>
+        <p class="side__note" style="--x: 87; --y: 6; --size: 5"><span>(P)</span><span>2.3</span></p>
+        <p class="side__note" style="--x: 89; --y: -47; --size: 8"><span>(B)</span><span>2.4</span></p>
+        <p class="side__note" style="--x: 87; --y: 56; --size: 5"><span>(G)</span><span>2.2</span></p>
+        <p class="side__note" style="--x: 87; --y: 108; --size: 5"><span>(U)</span><span>2.1</span></p>
+      </div>
+
+      <!-- Group 129 — Desktop Screens -->
+      <article class="screens">
+        <div class="screens__card">
+          <div class="screens-card-inner">
+            <p class="screens-kicker">02.1 &middot; (Visual Rhythm &amp; Polish)</p>
+            <h3 class="screens-title">Retention Pacing &amp; Audio</h3>
+            <p class="screens-body">
+              Tight pacing, clean sound design and visual hooks tailored to hold viewer attention past the critical first seconds.
+            </p>
+            <div class="screens-specs">
+              <div class="screens-spec-item"><span class="screens-spec-icon">✦</span> 9:16 Vertical Reel Format</div>
+              <div class="screens-spec-item"><span class="screens-spec-icon">✦</span> Fast-Paced Visual Hook Strategy</div>
+              <div class="screens-spec-item"><span class="screens-spec-icon">✦</span> Clean SFX &amp; Sound Rhythm</div>
+            </div>
+            <div class="screens-actions">
+              <a href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener noreferrer" class="link-arrow" id="screens-instagram">See all reels <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+              <a href="thumbnails.html" class="link-arrow" id="screens-thumbnails" style="margin-left: 20px; color: #c084fc;">Thumbnail Portfolio (18 Remakes) <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+              <a href="creative.html" class="link-arrow" id="screens-stash" style="margin-left: 20px; color: #f2b134;">Creative Stash (46 Works) <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="screens__photo">
+          <video src="portfolio_vids/Portfolio_vid_4.mp4" poster="portfolio_img/SaveClip.App_741099411_18099442382521521_991808803393734881_n.jpg" autoplay loop muted playsinline></video>
+        </div>
+
+        <p class="screens__shout screens__shout--a"><span>High-Retention<br />Editing</span></p>
+        <p class="screens__shout screens__shout--b"><span>02<br />Motion</span></p>
+      </article>
+
+      <!-- Semi-Circle Rotating Portfolio Showcase (Deal Hero 3D Turning Wheel) -->
+      <section class="clock-section deal-showcase-section" aria-label="Semi-Circle Rotating Portfolio Showcase">
+        <div class="deal-hero-stage" id="deal-hero-stage" aria-label="A Deck of Reels Dealt Into a Fan That Lifts Into a Turning Wheel">
+          <div class="deal-hero__scene">
+            <div class="deal-hero__wheel" id="deal-hero-wheel"></div>
+            <div class="deal-hero__clouds" aria-hidden="true">
+              </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- The seven blocks. Placed by script rather than by a number here: they
+           come in as the transition's last circle reaches the foot of the
+           screen, and where that falls depends on the window's height while
+           everything else on this page is measured off its width. -->
+      <!-- The card the ground shrinks into. Its line of pictures runs on for
+           good; one slot in it is left open, and that is where the ground
+           lands. Placed by script, since where it sits depends on how much
+           runway the shrink needs and that is a matter of screen height. -->
+      <!-- The fog the lower blocks stand on (58:295). It starts on the palette's
+           own middle and stops where the triangle starts, which is what the file
+           has it do, and it drifts as it passes. Under everything: the blocks are
+           on the content layer, this is below them. -->
+      <div class="fog" aria-hidden="true">
+        <img src="assets/tri-fog-BzhW1aqF.webp" alt=""  loading="lazy" decoding="async" />
+      </div>
+
+      <section class="deck">
+        <div class="deck__header">
+          <p class="deck__kicker">03 &middot; (Verified Numbers)</p>
+          <h2 class="deck__title">Real Stats</h2>
+        </div>
+
+        <div class="deck__stats-wrap">
+          <div class="deck__stat-item">
+            <span class="stat-number">7+</span>
+            <span class="stat-label">Featured Works</span>
+          </div>
+          <div class="deck__stat-item">
+            <span class="stat-number">12K</span>
+            <span class="stat-label">Best Reel Views</span>
+          </div>
+          <div class="deck__stat-item">
+            <span class="stat-number">18</span>
+            <span class="stat-label">GitHub Stars</span>
+          </div>
+          <div class="deck__stat-item">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Certificates</span>
+          </div>
+          <div class="deck__stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Tech Communities</span>
+          </div>
+          <div class="deck__stat-item">
+            <span class="stat-number">140+</span>
+            <span class="stat-label">Instagram Community</span>
+          </div>
+        </div>
+
+        <div class="deck__reel">
+          <img class="deck__pic" style="--i: 0" src="portfolio_img/caraousal_01.jpg" alt="" loading="lazy" decoding="async" />
+          <img class="deck__pic" style="--i: 1" src="portfolio_img/SaveClip.App_741454167_18099442364521521_6159243008881840267_n.jpg" alt="" loading="lazy" decoding="async" />
+          <img class="deck__pic" style="--i: 2" src="portfolio_img/SaveClip.App_742208666_18099442406521521_8733214214320992672_n.jpg" alt="" loading="lazy" decoding="async" />
+          <div class="deck__pic deck__slot" style="--i: 3">
+            <img src="assets/bg7-DimjdT4q.webp" alt="" loading="lazy" decoding="async" />
+          </div>
+          <img class="deck__pic" style="--i: 4" src="portfolio_img/SaveClip.App_758368228_17897899863559531_7967120900980634937_n.jpg" alt="" loading="lazy" decoding="async" />
+          <img class="deck__pic" style="--i: 5" src="portfolio_img/SaveClip.App_758573430_17897899854559531_7838646958684505089_n.jpg" alt="" loading="lazy" decoding="async" />
+          <img class="deck__pic" style="--i: 6" src="portfolio_img/SaveClip.App_758690790_17897899818559531_879915959403471347_n.jpg" alt="" loading="lazy" decoding="async" />
+        </div>
+      </section>
+
+      <!-- The ground the blocks stand on, and the thing that travels down into
+           the card below. All three sit on one layer and are ordered by hand:
+           the card first, then this, then the blocks. So the picture passes
+           over the card on its way down and still paints under the blocks it
+           is the ground for, which no single z-index could give it — it has to
+           be between two things that do not overlap each other.
+           A window with the picture drifting inside rather than a bare image,
+           since it has to end up a crop with room to move. -->
+        <div class="seven__ground">
+          <img src="assets/bg7-DimjdT4q.webp" alt=""  loading="lazy" decoding="async" />
+        </div>
+
+      <img src="kid/deck.webp" class="kid kid--deck"  alt="" aria-hidden="true" />
+      <div class="seven" id="tech-lab">
+        <!-- Projects: three v-card style cards -->
+        <!-- Project 1: TextHumaniser -->
+        <article class="v-card project-card bar" id="project-texthumaniser">
+          <div class="v-card__plate">
+            <img src="kid/vee-east.webp" class="kid kid--v-card" alt="" aria-hidden="true" />
+          </div>
+          
+          <div class="v-turn">
+            <span class="lines"><span>NLP Pipeline</span><span>Classical NLP</span><span>Rule-Based</span><span>18 Stars</span></span>
+          </div>
+
+          <p class="v-card__no">04.1</p>
+          <div class="v-card__shout">
+            <span>TextHumaniser</span><span></span><span>Rule-Based NLP</span><span>Text Pipeline</span><span>Offline Engine</span>
+          </div>
+
+          <p class="v-card__statement">
+            Offline, rule-based NLP pipeline that restructures long-form text while preserving meaning. Classical NLP only, no paid APIs.
+          </p>
+
+          <div class="v-card__tags">
+            <span>Python</span><span>spaCy</span><span>WordNet</span><span>NLTK</span>
+          </div>
+
+          <div class="v-card__foot">
+            <span class="v-card__status">In progress &middot; 18 stars</span>
+            <a href="https://github.com/ThoratSoham/TextHumaniser" class="link-arrow" target="_blank" rel="noopener noreferrer" id="gh-texthumaniser">View on GitHub <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <!-- Project 2: Telco Churn Prediction -->
+        <article class="v-card project-card pill" id="project-telco">
+          <div class="v-card__plate">
+            <img src="kid/special.webp" class="kid kid--v-card" alt="" aria-hidden="true" />
+          </div>
+          
+          <div class="v-turn">
+            <span class="lines"><span>Machine Learning</span><span>XGBoost &amp; RF</span><span>SMOTE Imbalance</span><span>SHAP Explains</span></span>
+          </div>
+
+          <p class="v-card__no">04.2</p>
+          <div class="v-card__shout">
+            <span>Telco Churn</span><span></span><span>Predictive Model</span><span>XGBoost &amp; SHAP</span><span>Classification</span>
+          </div>
+
+          <p class="v-card__statement">
+            End-to-end churn classifier with XGBoost and Random Forest, SMOTE for class imbalance, randomized hyperparameter search and SHAP explainability.
+          </p>
+
+          <div class="v-card__tags">
+            <span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>SHAP</span>
+          </div>
+
+          <div class="v-card__foot">
+            <span class="v-card__status">Complete</span>
+            <a href="https://github.com/ThoratSoham/data-science-projects" class="link-arrow" target="_blank" rel="noopener noreferrer" id="gh-telco">View on GitHub <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+
+        <!-- Project 3: Mentor Marketplace -->
+        <article class="v-card project-card special" id="project-mentor">
+          <div class="v-card__plate">
+            <img src="kid/vertical.webp" class="kid kid--v-card" alt="" aria-hidden="true" />
+          </div>
+          
+          <div class="v-turn">
+            <span class="lines"><span>Full-Stack Web</span><span>Next.js &amp; TS</span><span>Tailwind CSS</span><span>Supabase RLS</span></span>
+          </div>
+
+          <p class="v-card__no">04.3</p>
+          <div class="v-card__shout">
+            <span>Mentor Market</span><span></span><span>Full-Stack SaaS</span><span>Magic-Link Auth</span><span>Shipped MVP</span>
+          </div>
+
+          <p class="v-card__statement">
+            Mentor and mentee marketplace MVP with passwordless magic-link login, role selection, protected dashboards and row-level security.
+          </p>
+
+          <div class="v-card__tags">
+            <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span>
+          </div>
+
+          <div class="v-card__foot">
+            <span class="v-card__status">MVP in progress</span>
+            <a href="https://github.com/ThoratSoham/Consult" class="link-arrow" target="_blank" rel="noopener noreferrer" id="gh-mentor">View on GitHub <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Studio Walk-in Sequence (75 Frames Scroll Scrub Animation) -->
+      <!-- 7 — Studio Walk-in Sequence (75 Frames Scroll Scrub Background) -->
+        <section id="hero-scroll-scene" class="scene-stage" aria-label="Studio Walk-in Background Sequence">
+          <div class="scene-sticky-bg" aria-hidden="true">
+            <canvas id="scene-canvas" width="960" height="540"></canvas>
+            <div class="scene-canvas-overlay"></div>
+          </div>
+        </section>
+
+
+
+      <!-- Windows (51:1215). A black disc turning behind a white plate, and the
+           plate has two windows cut out of it: what shows through them are the
+           four names that ride the disc, one to a side. A quarter turn brings
+           the next pair up, and the two photographs in the plate are carried
+           round with it — they are on the disc as much as the names are, and the
+           windows simply let a different part of it be seen.
+
+           The plate is laid as five pieces rather than one with holes punched
+           through: the holes have to be real, since the disc turns behind them,
+           and five rectangles are surer than any mask. -->
+      <section class="win" id="about">
+        <div class="win__plate win__plate--main">
+          <div class="win__header">
+            <p class="win-kicker">05 &middot; (Trust &amp; Background)</p>
+            <h2 class="win-title">About &amp; Experience</h2>
+          </div>
+          
+          <div class="about-grid">
+            <!-- Column 1: Bio, Japanese, Resume, and 3D Interactive Sticker -->
+            <div class="about-card-bio">
+              <p class="about-lead">
+                I'm a video editor and designer who also ships code. Currently pursuing B.Tech in Computer Engineering at NMIET (2025&ndash;2029).
+              </p>
+              <p class="about-body">
+                I combine visual storytelling with full-stack engineering, creating high-retention content and building real applications with AI-assisted workflows.
+              </p>
+              
+              <div class="about-jp-box">
+                <span class="jp-badge">Japanese</span>
+                <p>Elementary. I am learning, so please be kind to my grammar.</p>
+              </div>
+
+              <div class="about-cv-action">
+                <a href="Soham_Thorat_Resume.pdf" class="link-arrow" id="about-resume" download>Download resume <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+              </div>
+
+              <!-- Interactive 3D Cursor Tilt Sticker -->
+              <div class="about-sticker-tilt-wrap" id="about-sticker-wrap" title="Interactive Sticker - Hover to tilt">
+                <img src="my_sticker.png" alt="Soham Thorat Sticker" class="about-sticker-img" />
+              </div>
+            </div>
+
+            <!-- Column 2: Experience & Leadership Timeline -->
+            <div class="about-card-exp">
+              <h3 class="exp-heading">Experience &amp; Leadership</h3>
+              <div class="exp-timeline">
+                <div class="exp-item">
+                  <span class="exp-time">Oct 2026 &ndash; Present</span>
+                  <h4 class="exp-org">MLSC NMIET</h4>
+                  <p class="exp-role">Content Creator</p>
+                </div>
+                <div class="exp-item">
+                  <span class="exp-time">May 2026 &ndash; Oct 2026</span>
+                  <h4 class="exp-org">GDGoC NMIET</h4>
+                  <p class="exp-role">Content Creator</p>
+                </div>
+                <div class="exp-item">
+                  <span class="exp-time">2026</span>
+                  <h4 class="exp-org">Institution's Innovation Council (IIC)</h4>
+                  <p class="exp-role">Content Creator</p>
+                </div>
+              </div>
+
+              <div class="pub-card">
+                <span class="pub-badge">Publication</span>
+                <p class="pub-title">"Perceptions of AI-Based Conversational Therapy Versus Human Talk-Based Therapy"</p>
+              </div>
+            </div>
+
+            <!-- Column 3: Professional Certifications (Moved into About section) -->
+            <div class="about-card-certs">
+              <h3 class="certs-heading">Professional Certifications</h3>
+              <p class="certs-subhead">05.1 &middot; (Anthropic &amp; Generative AI)</p>
+              <div class="certs-list">
+                <div class="cert-item">
+                  <span class="cert-bullet">✦</span>
+                  <span class="cert-text">Introduction to Retrieval Augmented Generation (RAG)</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-bullet">✦</span>
+                  <span class="cert-text">Claude Code in Action</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-bullet">✦</span>
+                  <span class="cert-text">Claude Code 101</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-bullet">✦</span>
+                  <span class="cert-text">Claude with the Anthropic API</span>
+                </div>
+                <div class="cert-item">
+                  <span class="cert-bullet">✦</span>
+                  <span class="cert-text">Introduction to Claude Cowork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 rec and triangle (58:87). Two long cards side by side and a triangle
+           standing under them, six below the slider. Everything is placed off the
+           file's own frame, where the pair sit at y 416 and the triangle at 648. -->
+      <section class="vee" id="learn">
+        <div class="vee__card vee__card--full">
+          <div class="learn-header">
+            <p class="learn-kicker">06 &middot; (Continuous Growth)</p>
+            <h2 class="learn-title">LEARN</h2>
+          </div>
+          
+          <p class="learn-statement">
+            Data science, machine learning, deep learning and computer vision. Still training. Results get posted when they are real.
+          </p>
+
+          <div class="learn-cards">
+            <div class="learn-item">
+              <span class="learn-badge">loading...</span>
+              <h4>Deep Learning</h4>
+              <p>Neurons are warming up.</p>
+            </div>
+            <div class="learn-item">
+              <span class="learn-badge">loading...</span>
+              <h4>Machine Learning</h4>
+              <p>Fitting the model. The jokes are overfitting.</p>
+            </div>
+            <div class="learn-item">
+              <span class="learn-badge">loading...</span>
+              <h4>Computer Vision</h4>
+              <p>Teaching a computer to see. It already likes the sunglasses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Bottom Poster (61:602), after the speedometer. The big line is set
+           line by line because each of its four lines has its own indent, and it
+           is built letter by letter because the circle will pass through it like
+           a magnet and every letter has to answer for itself. At rest it reads as
+           ordinary type.
+
+           The clock at the foot keeps real time — its hand steps a twelfth of a
+           turn a second — and the white circle beside it is where the travelling
+           shape is going to come to rest. -->
+      <section class="poster" id="contact">
+        <div class="poster__content-wrap">
+          <p class="poster-kicker">07 &middot; (Get in Touch)</p>
+          <h2 class="poster-heading">
+            <span>Let's make something</span>
+            <span class="poster-heading--accent">loud &amp; memorable.</span>
+          </h2>
+
+          <p class="poster-availability">Open for freelance creative work &amp; full-stack collaboration.</p>
+
+          <div class="poster-actions">
+            <a href="mailto:djsoham02@gmail.com" class="link-arrow" id="contact-email">Email me <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></a>
+            <button type="button" class="link-arrow" id="copy-email" data-email="djsoham02@gmail.com"><span class="copy-email__label">Copy email</span> <span class="link-arrow__icon" aria-hidden="true">&rarr;</span></button>
+          </div>
+
+          <div class="poster-socials">
+            <a href="https://github.com/ThoratSoham" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/soham-thorat-8505531b6" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://x.com/SohamThorat_" target="_blank" rel="noopener noreferrer" class="social-link" title="X (Twitter)" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+      
+
+      <!-- The footer. The last thing the page does is the first thing again:
+           the name climbs out of its mask letter by letter, the plates open
+           from their top edge and the lines ride up out of theirs — the
+           preloader's own arrival, played once more at the other end. The
+           letters are the logo's own shapes; the mask is the SVG's viewport,
+           so below its foot a letter is simply not drawn. -->
+      <footer class="footer">
+        <svg class="footer__logo" viewBox="0 0 1401 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="THORAT">
+          <g class="footer__letter" data-letter="T">
+            <path d="M29.860 0.000H0.000V46.138V109.865H29.860V214.167H109.700V0.000H29.860Z" fill="currentColor"/>
+            <path d="M197.560 0.000H117.720V46.138V109.865V214.167H197.560V109.865H227.010V46.138V0.000H197.560Z" fill="currentColor"/>
+          </g>
+          <g class="footer__letter" data-letter="H">
+            <path d="M234.453 46.138V214.085H298.015V0H280.510L234.453 46.138Z" fill="currentColor"/>
+            <path d="M397.901 0V214.085H461.463V46.138L415.325 0H397.901Z" fill="currentColor"/>
+            <path d="M298.015 82.000H397.901V140.000H298.015Z" fill="currentColor"/>
+          </g>
+          <g class="footer__letter" data-letter="O">
+            <path d="M469.484 46.138V167.947L515.541 214.085H579.185V0.000H515.541L469.484 46.138Z" fill="currentColor"/>
+            <path d="M586.793 0.000V214.085H650.356L696.494 167.947V46.138L650.356 0.000H586.793Z" fill="currentColor"/>
+          </g>
+          <g class="footer__letter" data-letter="R">
+            <path d="M703.934 0.000V214.167H750.073H813.635V0.000H750.073H703.934Z" fill="currentColor"/>
+            <path d="M821.649 0.000V134.488H930.369V54.482L875.559 0.000H821.649Z" fill="currentColor"/>
+            <path d="M821.649 143.569V214.658H930.369L859.525 143.569H821.649Z" fill="currentColor"/>
+          </g>
+          <g class="footer__letter" data-letter="A">
+            <path d="M938.965 46.1383V214.167H985.021H1048.67V0H985.021L938.965 46.1383Z" fill="currentColor"/>
+            <path d="M1056.27 0V214.167H1119.84H1165.97V46.1383L1119.84 0H1056.27Z" fill="currentColor"/>
+          </g>
+          <g class="footer__letter" data-letter="T">
+            <path d="M1203.85 0H1173.99V46.1383V109.865H1203.85V214.167H1283.69V0H1203.85Z" fill="currentColor"/>
+            <path d="M1371.55 0H1291.71V46.1383V109.865V214.167H1371.55V109.865H1401V46.1383V0H1371.55Z" fill="currentColor"/>
+          </g>
+        </svg>
+
+        <div class="footer__line">
+          <span class="footer__bar" aria-hidden="true"></span>
+          <span class="footer__box" aria-hidden="true"></span>
+
+          <p class="footer__credits">
+            <span class="line"
+              ><span class="line__in"
+                >©2026. Thorat — <a class="u" href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener">Soham Thorat</a> Portfolio &amp;
+                <a class="u" href="https://github.com/ThoratSoham" target="_blank" rel="noopener">Creative Lab</a></span
+              ></span
+            >
+          </p>
+
+          <p class="footer__season">
+            <span class="line"
+              ><span class="line__in"
+                >High-Retention Video Editing &amp;
+                <a class="u" href="mailto:thoratsoham@gmail.com" target="_blank" rel="noopener">Creative Engineering</a></span
+              ></span
+            ><span class="line"><span class="line__in">Based in Pune, India · Available Worldwide</span></span>
+          </p>
+
+          <p class="footer__by">
+            <span class="line"
+              ><span class="line__in"
+                >Crafted with <a class="u" href="https://obys.agency/" target="_blank" rel="noopener">Obys Format System</a></span
+              ></span
+            >
+          </p>
+        </div>
+      </footer>
+
+      
+    </div>
+
+    <!-- The small-screen stand-in. The site is drawn against a 1440 frame and
+         every measure in it is that frame scaled, so there is no honest way to
+         show it on a phone — better to say so plainly and give the visitor the
+         one thing here that needs no room: the dial, running. Its own hands are
+         driven by the same script as the one in the page. -->
+    <div class="splash" aria-hidden="false">
+      <svg class="splash__logo" viewBox="0 0 1401 215" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="THORAT">
+      <g class="splash__letter" data-letter="T">
+            <path d="M29.860 0.000H0.000V46.138V109.865H29.860V214.167H109.700V0.000H29.860Z" fill="currentColor"/>
+            <path d="M197.560 0.000H117.720V46.138V109.865V214.167H197.560V109.865H227.010V46.138V0.000H197.560Z" fill="currentColor"/>
+          </g>
+      <g class="splash__letter" data-letter="H">
+            <path d="M234.453 46.138V214.085H298.015V0H280.510L234.453 46.138Z" fill="currentColor"/>
+            <path d="M397.901 0V214.085H461.463V46.138L415.325 0H397.901Z" fill="currentColor"/>
+            <path d="M298.015 82.000H397.901V140.000H298.015Z" fill="currentColor"/>
+          </g>
+      <g class="splash__letter" data-letter="O">
+            <path d="M469.484 46.138V167.947L515.541 214.085H579.185V0.000H515.541L469.484 46.138Z" fill="currentColor"/>
+            <path d="M586.793 0.000V214.085H650.356L696.494 167.947V46.138L650.356 0.000H586.793Z" fill="currentColor"/>
+          </g>
+      <g class="splash__letter" data-letter="R">
+            <path d="M703.934 0.000V214.167H750.073H813.635V0.000H750.073H703.934Z" fill="currentColor"/>
+            <path d="M821.649 0.000V134.488H930.369V54.482L875.559 0.000H821.649Z" fill="currentColor"/>
+            <path d="M821.649 143.569V214.658H930.369L859.525 143.569H821.649Z" fill="currentColor"/>
+          </g>
+      <g class="splash__letter" data-letter="A">
+            <path d="M938.965 46.1383V214.167H985.021H1048.67V0H985.021L938.965 46.1383Z" fill="currentColor"/>
+            <path d="M1056.27 0V214.167H1119.84H1165.97V46.1383L1119.84 0H1056.27Z" fill="currentColor"/>
+          </g>
+      <g class="splash__letter" data-letter="T">
+            <path d="M1203.85 0H1173.99V46.1383V109.865H1203.85V214.167H1283.69V0H1203.85Z" fill="currentColor"/>
+            <path d="M1371.55 0H1291.71V46.1383V109.865V214.167H1371.55V109.865H1401V46.1383V0H1371.55Z" fill="currentColor"/>
+          </g>
+      </svg>
+
+      <div class="splash__face">
+    <div class="dial">
+    <img class="dial__rim" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='697'%20height='697'%20viewBox='0%200%20697%20697'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20id='Ellipse%2051'%20cx='348.5'%20cy='348.5'%20r='348.5'%20fill='white'/%3e%3c/svg%3e" alt="" />
+    <img class="dial__inner dial__inner--a" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='504.068'%20height='504.068'%20viewBox='0%200%20504.068%20504.068'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='Ellipse%2052'%20d='M252.034%200.679688C390.854%200.679745%20503.389%20113.215%20503.389%20252.034C503.389%20390.854%20390.854%20503.389%20252.034%20503.389C113.215%20503.389%200.679696%20390.854%200.679688%20252.034C0.679688%20113.215%20113.215%200.679688%20252.034%200.679688Z'%20stroke='%23E9E9E9'%20stroke-width='1.35867'/%3e%3c/svg%3e" alt="" />
+    <img class="dial__inner dial__inner--b" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='504.068'%20height='504.068'%20viewBox='0%200%20504.068%20504.068'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20id='Ellipse%2053'%20d='M252.034%200.679688C390.854%200.679745%20503.389%20113.215%20503.389%20252.034C503.389%20390.854%20390.854%20503.389%20252.034%20503.389C113.215%20503.389%200.679696%20390.854%200.679688%20252.034C0.679688%20113.215%20113.215%200.679688%20252.034%200.679688Z'%20fill='white'%20stroke='%23E9E9E9'%20stroke-width='1.35867'/%3e%3c/svg%3e" alt="" />
+    <!-- The three hands. Each touches the inner ring from the inside, so
+    where it sits is the ring's radius less its own; the script takes
+    them round from there. Biggest tells the hour, smallest the second. -->
+    <img class="dial__dot dial__dot--minute" style="--d: 27.173" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='27.1735'%20height='27.1735'%20viewBox='0%200%2027.1735%2027.1735'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cellipse%20id='Ellipse%2054'%20cx='13.5867'%20cy='13.5867'%20rx='13.5867'%20ry='13.5867'%20fill='black'/%3e%3c/svg%3e" alt="" />
+    <img class="dial__dot dial__dot--second" style="--d: 16.304" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='16.3041'%20height='16.3041'%20viewBox='0%200%2016.3041%2016.3041'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cellipse%20id='Ellipse%2055'%20cx='8.15205'%20cy='8.15205'%20rx='8.15205'%20ry='8.15205'%20fill='black'/%3e%3c/svg%3e" alt="" />
+    <img class="dial__dot dial__dot--hour" style="--d: 40.76" src="data:image/svg+xml,%3csvg%20preserveAspectRatio='none'%20overflow='visible'%20style='display:%20block;'%20width='40.7602'%20height='40.7602'%20viewBox='0%200%2040.7602%2040.7602'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cellipse%20id='Ellipse%2056'%20cx='20.3801'%20cy='20.3801'%20rx='20.3801'%20ry='20.3801'%20fill='black'/%3e%3c/svg%3e" alt="" />
+    <!-- hours run on one rule: radius 326, a step of 30, each turned to face out -->
+    <p class="dial__hour" style="--i: 12">12</p>
+    <p class="dial__hour" style="--i: 1">1</p>
+    <p class="dial__hour" style="--i: 2">2</p>
+    <p class="dial__hour" style="--i: 3">3</p>
+    <p class="dial__hour" style="--i: 4">4</p>
+    <p class="dial__hour" style="--i: 5">5</p>
+    <p class="dial__hour" style="--i: 6">6</p>
+    <p class="dial__hour" style="--i: 7">7</p>
+    <p class="dial__hour" style="--i: 8">8</p>
+    <p class="dial__hour" style="--i: 9">9</p>
+    <p class="dial__hour" style="--i: 10">10</p>
+    <p class="dial__hour" style="--i: 11">11</p>
+    <p class="dial__kicker">(Format)</p>
+    <h2 class="dial__title">Circle</h2>
+    </div>
+      </div>
+
+      <p class="splash__line splash__line--credit">
+        Thorat — <a class="u" href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener">Soham Thorat</a> Portfolio &amp; Creative Lab
+      </p>
+      <p class="splash__line splash__line--sorry">
+        Sorry, this experience is designed<br />for desktop devices.
+      </p>
+    </div>
+  <script id="copy-email-script">
+      document.addEventListener('click', function (e) {
+        var b = e.target.closest('#copy-email');
+        if (!b) return;
+        var label = b.querySelector('.copy-email__label');
+        var done = function () {
+          label.textContent = 'Copied!';
+          b.classList.add('is-copied');
+          setTimeout(function () { label.textContent = 'Copy email'; b.classList.remove('is-copied'); }, 2200);
+        };
+        if (navigator.clipboard) navigator.clipboard.writeText(b.dataset.email).then(done, done); else done();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+/* ==========================================================================
+   SOHAM THORAT PORTFOLIO: BASE STYLES
+   Reset, Grain/Halftone Overlay, Typography & Accessibility
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--black);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 500;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--black);
+  overflow-x: hidden;
+  position: relative;
+  font-size: var(--text-body);
+}
+
+/* Halftone and Grain Overlay (~6% opacity) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.06;
+  background-image: 
+    radial-gradient(#F2B134 0.75px, transparent 0.75px),
+    radial-gradient(#8A5CD6 0.75px, transparent 0.75px);
+  background-size: 16px 16px, 24px 24px;
+  background-position: 0 0, 8px 8px;
+}
+
+/* Text Selection */
+::selection {
+  background: var(--gold);
+  color: var(--black);
+}
+
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-2);
+  background: var(--gold);
+  color: var(--black);
+  padding: var(--space-1) var(--space-2);
+  font-weight: 700;
+  text-decoration: none;
+  border: var(--border-width) solid var(--black);
+  box-shadow: var(--shadow-offset);
+  border-radius: var(--border-radius);
+  z-index: 9999;
+  transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+  top: var(--space-2);
+}
+
+/* Focus Ring */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin-bottom: var(--space-2);
+  font-weight: 500;
+  max-width: 68ch;
+}
+
+p.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(var(--space-2), 4vw, var(--space-6));
+  padding-right: clamp(var(--space-2), 4vw, var(--space-6));
+}
+
+/* Dynamic Star-S Space Yielding: Seamless GPU translation without layout reflows */
+main .container {
+  transform: translate3d(var(--star-shift, 0px), 0, 0);
+  will-change: transform;
+}
+
+.section-wrapper {
+  position: relative;
+  padding-top: clamp(var(--space-8), 10vw, var(--space-16));
+  padding-bottom: clamp(var(--space-8), 10vw, var(--space-16));
+  z-index: var(--z-content);
+}
+
+/* --------------------------------------------------------------------------
+   CREEPY FONT GLITCH ANIMATION
+   Titles dynamically shift from Archivo Black to eerie 'Rubik Glitch' / 'Creepster'
+   with chromatic aberration, digital twitching, and sinister distortions.
+   -------------------------------------------------------------------------- */
+.hero-title,
+.chapter-word,
+.glitch-title {
+  position: relative;
+  display: inline-block;
+  animation: creepy-glitch-cycle 6.5s infinite;
+  transform-origin: center;
+}
+
+#home .hero-title { animation-delay: 0s; }
+#create .chapter-word { animation-delay: 1.8s; }
+#build .chapter-word { animation-delay: 3.4s; }
+#learn .chapter-word { animation-delay: 4.8s; }
+#about .chapter-word { animation-delay: 2.3s; }
+#journal .chapter-word { animation-delay: 5.5s; }
+
+@keyframes creepy-glitch-cycle {
+  0%, 85%, 100% {
+    font-family: var(--font-display);
+    transform: translate(0, 0) skew(0deg);
+    text-shadow: 4px 4px 0px #000000;
+    letter-spacing: -0.02em;
+    filter: none;
+  }
+  86% {
+    font-family: var(--font-glitch);
+    transform: translate(-3px, 1px) skew(-5deg);
+    text-shadow: -4px 0px #ff0055, 4px 0px #00ffff, 4px 4px 0px #000;
+    letter-spacing: 0.08em;
+    color: #ff3377;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 85, 0.6));
+  }
+  87.5% {
+    font-family: var(--font-glitch);
+    transform: translate(4px, -2px) skew(6deg);
+    text-shadow: 4px -2px #00ffaa, -4px 2px #ff0055, 4px 4px 0px #000;
+    letter-spacing: -0.03em;
+    color: #00ffff;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.7));
+  }
+  89% {
+    font-family: var(--font-glitch);
+    transform: translate(-2px, 0) skew(-3deg);
+    text-shadow: -3px 0 #ffe600, 3px 0 #ff0055;
+    letter-spacing: 0.05em;
+    color: var(--gold);
+  }
+  90.5% {
+    font-family: var(--font-display);
+    transform: translate(1px, -1px) skew(0deg);
+    text-shadow: 4px 4px 0px #000000;
+    letter-spacing: -0.02em;
+    color: inherit;
+    filter: none;
+  }
+  91.5% {
+    font-family: var(--font-glitch);
+    transform: translate(-2px, 2px) skew(4deg);
+    text-shadow: 3px 0 #ff0055, -3px 0 #00ffff;
+    letter-spacing: 0.06em;
+    color: #ff5500;
+  }
+  92.5%, 99.9% {
+    font-family: var(--font-display);
+    transform: translate(0, 0) skew(0deg);
+    text-shadow: 4px 4px 0px #000000;
+    letter-spacing: -0.02em;
+    color: inherit;
+    filter: none;
+  }
+}
+
+/* Interactive Hover Trigger: Force instant creepy glitch on hover */
+.hero-title:hover,
+.chapter-word:hover {
+  animation: creepy-glitch-intense 0.45s ease forwards !important;
+}
+
+@keyframes creepy-glitch-intense {
+  0% {
+    font-family: var(--font-display);
+    transform: translate(0, 0);
+  }
+  25% {
+    font-family: var(--font-glitch);
+    transform: translate(-5px, 2px) skew(-8deg);
+    text-shadow: -5px 0 #ff0055, 5px 0 #00ffff;
+    letter-spacing: 0.08em;
+    color: #ff0055;
+  }
+  50% {
+    font-family: var(--font-glitch);
+    transform: translate(5px, -2px) skew(7deg);
+    text-shadow: 5px 0 #00ffaa, -5px 0 #ff0055;
+    color: #00ffff;
+  }
+  75% {
+    font-family: var(--font-glitch);
+    transform: translate(-2px, 0) skew(-4deg);
+    text-shadow: -3px 0 #ffea00;
+  }
+  100% {
+    font-family: var(--font-display);
+    transform: translate(0, 0) skew(0deg);
+    text-shadow: 4px 4px 0px #000000;
+    color: inherit;
+  }
+}
+
+.calm-mode .hero-title,
+.calm-mode .chapter-word {
+  animation: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

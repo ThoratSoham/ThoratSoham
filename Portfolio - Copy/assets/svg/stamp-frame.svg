@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250" fill="none">
+  <defs>
+    <pattern id="scallop-h" width="20" height="10" patternUnits="userSpaceOnUse">
+      <path d="M0 0 Q5 10 10 0 Q15 10 20 0" fill="#3A1D63" stroke="#F2B134" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <!-- Base stamp card -->
+  <rect x="8" y="8" width="184" height="234" rx="4" fill="#3A1D63" stroke="#F2B134" stroke-width="3"/>
+  <rect x="16" y="16" width="168" height="218" rx="2" fill="#1E1033" stroke="#8A5CD6" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <!-- Decorative corner notches -->
+  <circle cx="8" cy="8" r="6" fill="#0B0A10" stroke="#F2B134" stroke-width="2"/>
+  <circle cx="192" cy="8" r="6" fill="#0B0A10" stroke="#F2B134" stroke-width="2"/>
+  <circle cx="8" cy="242" r="6" fill="#0B0A10" stroke="#F2B134" stroke-width="2"/>
+  <circle cx="192" cy="242" r="6" fill="#0B0A10" stroke="#F2B134" stroke-width="2"/>
+</svg>

@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "Graphic Design 01",
+    "subtitle": "Poster & Key Visual",
+    "category": "Poster",
+    "year": "2026",
+    "camera": "Photoshop • Illustrator",
+    "settings": "Vector & Raster • CMYK/RGB",
+    "image": "assets/images/graphics/graphic-01.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 2,
+    "title": "Graphic Design 02",
+    "subtitle": "Editorial Visual Artwork",
+    "category": "Editorial",
+    "year": "2026",
+    "camera": "Illustrator • InDesign",
+    "settings": "Typography & Grid",
+    "image": "assets/images/graphics/graphic-02.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 3,
+    "title": "Graphic Design 03",
+    "subtitle": "Brand Identity & Layout",
+    "category": "Branding",
+    "year": "2026",
+    "camera": "Photoshop • Figma",
+    "settings": "High Contrast Art Direction",
+    "image": "assets/images/graphics/graphic-03.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 4,
+    "title": "Graphic Design 04",
+    "subtitle": "Visual Concept Art",
+    "category": "Concept Art",
+    "year": "2026",
+    "camera": "Mixed Media • Digital",
+    "settings": "Color Grading & Composition",
+    "image": "assets/images/graphics/graphic-04.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 5,
+    "title": "Graphic Design 05",
+    "subtitle": "Creative Poster Art",
+    "category": "Poster",
+    "year": "2026",
+    "camera": "Adobe Creative Suite",
+    "settings": "Experimental Layout",
+    "image": "assets/images/graphics/graphic-05.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 6,
+    "title": "Graphic Design 06",
+    "subtitle": "Modern Digital Poster",
+    "category": "Digital Art",
+    "year": "2026",
+    "camera": "Illustrator • Photoshop",
+    "settings": "Geometric & Typographic",
+    "image": "assets/images/graphics/graphic-06.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 7,
+    "title": "Graphic Design 07",
+    "subtitle": "Typography & Composition",
+    "category": "Typography",
+    "year": "2026",
+    "camera": "Figma • Illustrator",
+    "settings": "Swiss Style & Editorial",
+    "image": "assets/images/graphics/graphic-07.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 8,
+    "title": "Graphic Design 08",
+    "subtitle": "Minimalist Visual Identity",
+    "category": "Branding",
+    "year": "2026",
+    "camera": "Adobe Illustrator",
+    "settings": "Vector Craft & Clean Lines",
+    "image": "assets/images/graphics/graphic-08.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 9,
+    "title": "Graphic Design 09",
+    "subtitle": "Cover Art & Key Visual",
+    "category": "Cover Art",
+    "year": "2026",
+    "camera": "Photoshop • Lightroom",
+    "settings": "Thumbnails & Key Visuals",
+    "image": "assets/images/graphics/graphic-09.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 10,
+    "title": "Graphic Design 10",
+    "subtitle": "Creative Layout System",
+    "category": "Editorial",
+    "year": "2026",
+    "camera": "InDesign • Illustrator",
+    "settings": "Editorial Grid & Hierarchy",
+    "image": "assets/images/graphics/graphic-10.jpg",
+    "aspect": "4:5"
+  },
+  {
+    "id": 11,
+    "title": "Graphic Design 11",
+    "subtitle": "Dynamic Promotional Poster",
+    "category": "Poster",
+    "year": "2026",
+    "camera": "Adobe Creative Cloud",
+    "settings": "Graphic Execution & Retouching",
+    "image": "assets/images/graphics/graphic-11.jpg",
+    "aspect": "4:5"
+  }
+]

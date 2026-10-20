@@ -1,0 +1,487 @@
+/* ==========================================================================
+   PHOTO PORTFOLIO: DEAL FAN WHEEL STYLES
+   Implements Avi Vashishta's "The Deal Hero":
+   3D Fan Deal -> Lift into 360° Turning Wheel rising out of Clouds
+   ========================================================================== */
+
+.photos-section {
+  position: relative;
+  background-color: #000000;
+  padding-top: var(--space-8);
+  padding-bottom: var(--space-10);
+  overflow: hidden;
+  border-top: 1px solid rgba(242, 177, 52, 0.15);
+}
+
+/* Background Video: bg-vid2 tilted 90 degrees */
+.photos-video-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+  background-color: #000000;
+}
+
+.photos-bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: max(140vh, 140vw);
+  height: max(140vh, 140vw);
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+  object-fit: cover;
+  opacity: 0.65;
+}
+
+.photos-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.65) 75%),
+              linear-gradient(to bottom, #000000 0%, transparent 15%, transparent 85%, #000000 100%);
+  pointer-events: none;
+}
+
+/* Full-Page Edge-to-Edge 3D Wheel Viewport (Compact & proportioned to frame) */
+.deal-wheel-viewport {
+  position: relative;
+  width: 100%;
+  height: clamp(620px, 75vh, 820px);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-2);
+  background-color: transparent;
+  overflow: hidden;
+  perspective: 1250px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 5;
+}
+
+.deal-wheel-viewport:active {
+  cursor: grabbing;
+}
+
+/* The 3D Stage (Brought to front for real card colors) */
+.deal-wheel-stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  will-change: transform;
+  z-index: 10;
+}
+
+/* Center Pivot Anchor for the 34 Cards */
+.deal-wheel-cards {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+}
+
+/* Individual Card (9:16 Aspect Ratio, perfectly proportioned to stay in frame) */
+.deal-card {
+  position: absolute;
+  left: -85px;
+  top: -300px;
+  width: 170px;
+  height: 300px;
+  transform-origin: center bottom;
+  transform-style: preserve-3d;
+  will-change: transform, visibility;
+  cursor: pointer;
+  outline: none;
+}
+
+.deal-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  border-radius: 7px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.8), 0 0 0 1.5px rgba(242, 177, 52, 0.4);
+  transition: box-shadow 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+}
+
+.deal-card:hover .deal-card-inner {
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.95), 0 0 0 2px var(--gold);
+  filter: brightness(1.1);
+}
+
+/* Card Faces (Front & Back) */
+.deal-card-front,
+.deal-card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+/* FRONT FACE (Photo in real colors) */
+.deal-card-front {
+  background-color: #000000;
+  transform: rotateY(0deg);
+}
+
+.deal-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: contrast(1.05) saturate(1.05);
+}
+
+.deal-card-scrim {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.88) 100%);
+  pointer-events: none;
+}
+
+.deal-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+}
+
+.deal-card-badge {
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 1.5px 5px;
+  border-radius: 2px;
+}
+
+.deal-card-title {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  line-height: 1.15;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.85);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deal-card-meta {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  color: var(--ink-muted);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* BACK FACE (Luxury Dark Ink / Monogram Panel) */
+.deal-card-back {
+  background: linear-gradient(135deg, #1e1033 0%, #3a1d63 50%, #150a24 100%);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border: 1px solid rgba(242, 177, 52, 0.4);
+}
+
+.deal-back-pattern {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(242, 177, 52, 0.5);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgba(58, 29, 99, 0.6) 0%, rgba(11, 10, 16, 0.85) 100%);
+}
+
+.deal-back-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.deal-back-logo {
+  filter: drop-shadow(0 0 10px rgba(242, 177, 52, 0.7));
+}
+
+.deal-back-monogram {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  color: var(--gold);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.deal-back-num {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.1em;
+}
+
+/* OPAQUE SCULPTED CLOUDS BANK (Removed to let photos appear in real colors) */
+.deal-clouds-bank {
+  display: none !important;
+}
+
+/* Navigation Controls & Hint Bar (Floating cleanly centered below stage) */
+.deal-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--purple-royal);
+  border: var(--border-width) solid var(--gold);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-offset);
+  max-width: 760px;
+  margin: var(--space-4) auto 0;
+  position: relative;
+  z-index: 20;
+}
+
+.deal-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--gold);
+  color: var(--black);
+  border: var(--border-width) solid var(--black);
+  box-shadow: 2px 2px 0px #000000;
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.deal-nav-btn:hover {
+  background-color: #ffd066;
+  transform: translateY(-2px);
+}
+
+.deal-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background-color: var(--purple-deep);
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: var(--border-radius);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.deal-action-btn:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+.deal-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--ink);
+  text-align: center;
+}
+
+.deal-hint-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gold);
+  box-shadow: 0 0 10px var(--gold);
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* Lightbox Modal */
+.photo-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(7, 5, 10, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.photo-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.photo-modal-card {
+  position: relative;
+  max-width: 900px;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--purple-royal);
+  border: var(--border-width) solid var(--gold);
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 0px #000000;
+  overflow: hidden;
+  transform: scale(0.92);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.photo-modal.active .photo-modal-card {
+  transform: scale(1);
+}
+
+.photo-modal-img-wrap {
+  position: relative;
+  max-height: 70vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.photo-modal-img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  display: block;
+}
+
+.photo-modal-details {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  background-color: var(--purple-royal);
+  border-top: 2px solid rgba(242, 177, 52, 0.3);
+}
+
+.photo-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.photo-modal-category {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.photo-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 4px 0 0 0;
+}
+
+.photo-modal-meta {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.photo-modal-settings {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--gold);
+  margin: 2px 0 0 0;
+}
+
+.photo-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--black);
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.photo-modal-close:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .deal-wheel-viewport {
+    height: 580px;
+  }
+  .deal-card {
+    width: 180px;
+    height: 320px;
+    left: -90px;
+    top: -320px;
+  }
+  .deal-controls-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .deal-hint-text {
+    font-size: 0.75rem;
+  }
+}

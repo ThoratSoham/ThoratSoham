@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thoratsoham.github.io/sitemap.xml

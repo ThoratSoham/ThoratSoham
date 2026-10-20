@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" fill="none">
+  <!-- Outer teardrop curve -->
+  <path d="M50 130 C20 130 10 95 10 70 C10 40 30 20 50 10 C62 4 78 8 82 22 C86 36 74 48 64 48 C52 48 44 38 46 26 C36 34 26 48 26 70 C26 90 36 114 50 114 C64 114 74 94 74 72 C74 65 72 58 70 52 C76 50 82 54 84 62 C88 74 88 88 82 104 C74 122 62 130 50 130 Z" 
+        fill="#F2B134" stroke="#1E1033" stroke-width="2"/>
+  <!-- Inner filigree drop -->
+  <path d="M48 100 C36 100 30 84 30 68 C30 54 38 44 48 38 C42 46 44 58 52 58 C60 58 64 50 64 42 C64 40 63 38 62 36 C68 44 70 54 70 66 C70 82 62 100 48 100 Z" 
+        fill="#1E1033" stroke="#F2B134" stroke-width="1.5"/>
+  <circle cx="48" cy="74" r="5" fill="#F2B134"/>
+  <circle cx="48" cy="74" r="2" fill="#0B0A10"/>
+</svg>

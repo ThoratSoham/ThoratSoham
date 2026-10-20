@@ -1,0 +1,10 @@
+[
+  {"key":"works","value":7,"label":{"en":"Works Featured","ja":"制作実績"}},
+  {"key":"certificates","value":5,"label":{"en":"Certificates","ja":"修了証"}},
+  {"key":"communities","value":3,"label":{"en":"Communities","ja":"コミュニティ"}},
+  {"key":"github_stars","value":18,"label":{"en":"GitHub Stars","ja":"GitHubスター"}},
+  {"key":"publications","value":1,"label":{"en":"Publications","ja":"論文"}},
+  {"key":"best_reel_views","value":12000,"label":{"en":"Best Reel Views","ja":"最高リール再生回数"},"format":"k"},
+  {"key":"instagram_followers","value":null,"label":{"en":"Followers","ja":"フォロワー"}},
+  {"key":"years_creating","value":null,"label":{"en":"Years Creating","ja":"制作年数"}}
+]

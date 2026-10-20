@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham Thorat — Hooksmith Thumbnail Studio // Before & After Split Sliders</title>
+  <meta name="description" content="Explore 15 interactive Before & After thumbnail remakes across Finance, Mystery, Challenges, Gaming, and Fitness. Built on cognitive psychology, curiosity gaps & scroll-stopping contrast.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Typography: Space Mono & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Core Stash Design System & Thumbnails Stylesheets -->
+  <link rel="stylesheet" href="css/stash.css">
+  <link rel="stylesheet" href="css/thumbnails.css">
+</head>
+<body class="thumb-page">
+
+  <!-- 1. Header Navigation Bar (Matches creative.html) -->
+  <header class="site-head" id="site-head">
+    <div class="brand-wrap">
+      <a href="thumbnails.html" class="site-brand">THORAT<span>THUMBNAILS</span></a>
+      <span class="site-subtitle">Split-Slider Studio</span>
+    </div>
+
+    <div class="h-status">
+      <span class="status-dot"></span>
+      <span>SYSTEM: ACTIVE</span>
+      <span>·</span>
+      <span class="live-time">18:00:00 IST</span>
+    </div>
+
+    <nav class="nav" aria-label="Main Navigation">
+      <a href="index.html" class="btn-portfolio">Main Portfolio ↗</a>
+      <a href="creative.html">Creative Stash ↗</a>
+      <a href="#thumbnails-grid">Split Sliders</a>
+      <a href="#offer">Risk-Free Offer</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="head-actions">
+      <button class="theme-btn" id="theme-toggle-btn" type="button" title="Toggle Light / Dark Mode" aria-label="Toggle Theme"></button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- 2. Hero Wordmark Section (Matches creative.html) -->
+    <section class="hero" id="hero">
+      <div class="hero-wordmark-wrap">
+        <h1 class="hero-wordmark">
+          <span>HOOKSMITH</span>
+          <span class="accent">THUMBNAILS<sup>STUDIO</sup></span>
+        </h1>
+        <p class="hero-desc">
+          Hook-first thumbnail design built on cognitive psychology, curiosity gaps, and scroll-stopping contrast. Where most beginners focus strictly on visual clutter, I focus on the psychology that earns the click. Explore 15 interactive before-and-after split remakes across 5 YouTube niches.
+        </p>
+
+        <div class="hero-stats-bar">
+          <span><b>[01]</b> REMAKES: <b>15</b></span>
+          <span><b>[02]</b> NICHES COVERED: <b>05</b></span>
+          <span><b>[03]</b> FREE TRIALS: <b>02</b></span>
+          <span><b>[04]</b> 100% <b>ADOBE PHOTOSHOP</b></span>
+          <span>ENGINE: <b>SPLIT DRAG SLIDER &amp; YT SIMULATOR</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Interactive Filter & View Switcher Toolbar -->
+    <section class="thumb-toolbar" aria-label="Filters and View Options">
+      <div class="thumb-toolbar-inner">
+        <!-- Niche Filter Pills -->
+        <div class="filter-pills" role="tablist" aria-label="Niche Categories">
+          <button type="button" class="pill-btn active thumb-chip" data-filter="all" role="tab" aria-selected="true">
+            All Remakes (15)
+          </button>
+          <button type="button" class="pill-btn thumb-chip" data-filter="finance" role="tab" aria-selected="false">
+            Finance (4)
+          </button>
+          <button type="button" class="pill-btn thumb-chip" data-filter="mystery" role="tab" aria-selected="false">
+            Mystery (4)
+          </button>
+          <button type="button" class="pill-btn thumb-chip" data-filter="gaming" role="tab" aria-selected="false">
+            Gaming (3)
+          </button>
+          <button type="button" class="pill-btn thumb-chip" data-filter="challenges" role="tab" aria-selected="false">
+            Challenges (2)
+          </button>
+          <button type="button" class="pill-btn thumb-chip" data-filter="fitness" role="tab" aria-selected="false">
+            Fitness (2)
+          </button>
+        </div>
+
+        <!-- View Mode Switcher -->
+        <div class="view-toggle" aria-label="View Modes">
+          <button type="button" class="view-btn thumb-view-btn active" data-view="slider" title="Interactive Split Drag Slider">
+            Split Slider
+          </button>
+          <button type="button" class="view-btn thumb-view-btn" data-view="sidebyside" title="Side by Side Comparison">
+            Side-by-Side
+          </button>
+          <button type="button" class="view-btn thumb-view-btn" data-view="youtube" title="Simulate Real YouTube Feed">
+            YouTube Feed
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Interactive Thumbnails Grid -->
+    <section class="thumb-grid-section" aria-label="Thumbnail Showcase Grid">
+      <div id="thumbnails-grid" class="thumb-cards-grid mode-slider">
+        <!-- Populated dynamically by js/thumbnails.js -->
+      </div>
+    </section>
+
+    <!-- 5. Risk-Free CTA Offer Section (Magazine Spotlight Style) -->
+    <section class="spotlight-wrap" id="offer">
+      <div class="mag-wide">
+        <div class="mag-media" style="aspect-ratio: 16 / 9;">
+          <img src="thumbnails/remakes/2.jpg" alt="High CTR Thumbnail Preview" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="mag-txt">
+          <div class="card-meta">
+            <b>PROVING, NOT PROMISING</b> <i>·</i> <span>RISK-FREE TRIAL</span>
+          </div>
+          <h2>Ready for thumbnails that command the click?</h2>
+          <p>
+            Start risk-free: <strong>2 free trial thumbnails + 1 free revision</strong>. Send me your upcoming video title and rough concept, and I'll craft scroll-stopping concepts tailored to your niche. Designed 100% in Adobe Photoshop.
+          </p>
+          <div class="mag-metrics">
+            <span><b>02</b> FREE TRIALS</span>
+            <span><b>01</b> REVISION INCLUDED</span>
+            <span><b>24-48H</b> TURNAROUND</span>
+          </div>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener noreferrer" class="btn-card">
+              Message on Instagram ↗
+            </a>
+            <a href="mailto:djsoham02@gmail.com?subject=Thumbnail%20Inquiry%20-%20Free%20Trial" class="btn-card" style="background: transparent; color: var(--fg); border-color: var(--line);">
+              Send Concept by Email ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Retro Mac OS Window Modal (.d-win) -->
+  <div id="thumb-modal" class="thumb-modal" role="dialog" aria-modal="true" aria-label="Thumbnail Comparison Detail View">
+    <div class="thumb-modal-inner">
+      <div class="thumb-modal-bar">
+        <button type="button" id="thumb-modal-close" class="thumb-modal-close" aria-label="Close modal">&times;</button>
+        <div class="thumb-modal-bar-title">THORAT_THUMBNAIL_INSPECTOR.APP</div>
+        <div style="width: 14px;"></div>
+      </div>
+      <div class="thumb-modal-content">
+        <div id="thumb-modal-viewer" class="thumb-modal-viewer">
+          <!-- Interactive before/after split populated by JS -->
+        </div>
+        <div class="thumb-modal-info">
+          <h3 id="thumb-modal-title" class="thumb-modal-title"></h3>
+          <div id="thumb-modal-strategy" class="thumb-modal-strategy"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Colophon Footer -->
+  <footer class="site-foot">
+    <div class="foot-left">
+      <span><b>Soham Thorat</b> · Hooksmith &amp; YouTube Packaging Specialist</span>
+      <span>Mumbai, India · Available for custom thumbnail packages &amp; creative work</span>
+    </div>
+
+    <div class="foot-links">
+      <a href="index.html">Main Portfolio ↗</a>
+      <a href="creative.html">Creative Stash ↗</a>
+      <a href="https://www.instagram.com/sohamthorat_/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="mailto:djsoham02@gmail.com">Email ↗</a>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript Engine -->
+  <script type="module" src="js/thumbnails.js"></script>
+</body>
+</html>

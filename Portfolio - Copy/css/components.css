@@ -1,0 +1,435 @@
+/* ==========================================================================
+   SOHAM THORAT PORTFOLIO: COMPONENTS
+   Buttons, Badges, Stickers, Stamp Cards, Cursor & Toggles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Buttons (44px min tap targets, 6px offset shadow, calm legible type)
+   -------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 28px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--text-body);
+  border-radius: var(--border-radius);
+  border: var(--border-width) solid var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+  white-space: nowrap;
+  user-select: none;
+  box-shadow: var(--shadow-offset);
+}
+
+.btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--shadow-offset-hover);
+}
+
+.btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.btn-primary {
+  background-color: var(--gold);
+  color: var(--black);
+  border-color: var(--black);
+}
+
+.btn-primary:hover {
+  background-color: #ffd06b;
+}
+
+.btn-outline {
+  background-color: var(--purple-royal);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+
+.btn-outline:hover {
+  background-color: var(--purple-deep);
+  color: var(--gold);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: #000000;
+  border-color: #000000;
+  box-shadow: none;
+}
+
+.btn-ghost:hover {
+  border-color: var(--gold);
+  box-shadow: 4px 4px 0px #000000;
+}
+
+/* --------------------------------------------------------------------------
+   Badges, Stickers & Numbered Tags (Rotated 2-4 deg, Gold)
+   -------------------------------------------------------------------------- */
+.sticker {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-offset);
+  transform: rotate(-3deg);
+  transform-origin: center;
+  transition: transform var(--transition-fast);
+}
+
+.sticker.rotate-right {
+  transform: rotate(3deg);
+}
+
+.sticker:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.numbered-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--purple-deep);
+  color: var(--gold);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  border: 2px solid var(--gold);
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--gold);
+  background: rgba(14, 10, 22, 0.7);
+  color: var(--gold);
+}
+
+.status-chip::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+
+.status-chip.done {
+  border-color: #5cd68a;
+  color: #5cd68a;
+}
+.status-chip.done::before {
+  background-color: #5cd68a;
+  box-shadow: 0 0 8px #5cd68a;
+}
+
+/* --------------------------------------------------------------------------
+   Cards & Stamp Frame Styling
+   -------------------------------------------------------------------------- */
+.card {
+  background-color: var(--purple-royal);
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-offset);
+  padding: var(--space-4);
+  position: relative;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--shadow-offset-hover);
+}
+
+.card-stamp {
+  border: var(--border-width) solid var(--gold);
+  position: relative;
+}
+
+.card-stamp::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1.5px dashed rgba(242, 177, 52, 0.4);
+  pointer-events: none;
+  border-radius: calc(var(--border-radius) - 1px);
+}
+
+/* --------------------------------------------------------------------------
+   Header & Navigation
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: rgba(11, 10, 16, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 2px solid rgba(138, 92, 214, 0.25);
+  z-index: var(--z-nav);
+  display: flex;
+  align-items: center;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--gold);
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 2px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.logo-badge:hover {
+  border-color: var(--gold);
+  border-radius: var(--border-radius);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--ink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--gold);
+  background-color: rgba(242, 177, 52, 0.1);
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* Toggles (Calm & Lang) */
+.toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  padding: 0 12px;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  background-color: var(--purple-deep);
+  color: var(--ink);
+  border: 2px solid var(--purple-glow);
+  border-radius: var(--border-radius);
+  box-shadow: 2px 2px 0px #000000;
+  transition: all var(--transition-fast);
+}
+
+.toggle-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.toggle-btn.active {
+  background-color: var(--gold);
+  color: var(--black);
+  border-color: var(--black);
+}
+
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple-royal);
+  border: 2px solid var(--gold);
+  border-radius: var(--border-radius);
+  color: var(--gold);
+}
+
+/* --------------------------------------------------------------------------
+   Skills Marquee Strip
+   -------------------------------------------------------------------------- */
+.marquee-container {
+  width: 100%;
+  background-color: var(--black);
+  border-top: var(--border-width) solid var(--gold);
+  border-bottom: var(--border-width) solid var(--gold);
+  padding: 14px 0;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 24s linear infinite;
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-3);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: var(--gold);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee-separator {
+  color: var(--purple-glow);
+  font-size: 0.8em;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* --------------------------------------------------------------------------
+   Custom Cursor (Desktop Fine Pointer Only)
+   -------------------------------------------------------------------------- */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: var(--gold);
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, border-radius 0.15s ease, background-color 0.15s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+
+.custom-cursor-label {
+  display: none;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 6px;
+  white-space: nowrap;
+}
+
+.custom-cursor.active {
+  width: 64px;
+  height: 28px;
+  border-radius: var(--border-radius);
+  background-color: var(--gold);
+}
+
+.custom-cursor.active .custom-cursor-label {
+  display: block;
+}
+
+@media (pointer: fine) {
+  .custom-cursor {
+    display: flex;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Calm Mode Overrides
+   -------------------------------------------------------------------------- */
+html.calm-mode .sticker {
+  transform: none !important;
+}
+
+html.calm-mode .marquee-track {
+  animation: none !important;
+  transform: none !important;
+}
+
+html.calm-mode .custom-cursor {
+  display: none !important;
+}
+
+html.calm-mode .card:hover,
+html.calm-mode .btn:hover {
+  transform: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Responsive Adjustments
+   -------------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .nav-links {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--black);
+    border-bottom: 3px solid var(--gold);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-4);
+    gap: var(--space-2);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+}

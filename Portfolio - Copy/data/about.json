@@ -1,0 +1,30 @@
+{
+  "bio": "I turn rough ideas into reels, posters and thumbnails people actually stop scrolling for, while building full-stack applications with modern AI-assisted workflows. Balancing high-impact creative execution with clean engineering, I direct the tools, review what matters, and ship real work. Currently pursuing B.Tech in Computer Engineering while training across machine learning and computer vision.",
+  "bio_ja": "思わず指が止まるリールやポスター、サムネイルの制作から、AI支援ワークフローを活用したフルスタック開発まで手掛けます。インパクトのあるクリエイティブと堅牢なエンジニアリングを両立させ、ツールを指揮しながら本当に意味のある成果物を公開しています。現在コンピュータ工学を専攻しつつ、機械学習やコンピュータビジョンも学んでいます。",
+  "education": {
+    "degree": "B.Tech Computer Engineering",
+    "degree_ja": "コンピュータ工学 学士課程",
+    "institution": "NMIET",
+    "start": "2025",
+    "end": "2029"
+  },
+  "timeline": [
+    {"org":"MLSC NMIET","role":"Content Creator","start":"2026-10","end":"present"},
+    {"org":"GDGoC NMIET","role":"Content Creator","start":"2026-05","end":"2026-10"},
+    {"org":"Institution's Innovation Council (IIC)","role":"Content Creator","start":null,"end":null}
+  ],
+  "certificates": [
+    "Introduction to Retrieval Augmented Generation",
+    "Claude Code in Action",
+    "Claude Code 101",
+    "Claude with the Anthropic API",
+    "Introduction to Claude Cowork"
+  ],
+  "publication": {
+    "title": "Perceptions of AI-Based Conversational Therapy Versus Human Talk-Based Therapy",
+    "venue": null,
+    "year": null,
+    "url": null
+  },
+  "japanese_note": "Japanese: Elementary. I am learning, so please be kind to my grammar."
+}

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   SOHAM THORAT PORTFOLIO: DESIGN TOKENS
+   Strict implementation of Section 2 Visual System
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --black: #0B0A10;
+  --purple-deep: #1E1033;
+  --purple-royal: #3A1D63;
+  --purple-glow: #8A5CD6;
+  --gold: #F2B134;
+  --ink: #F3EEFF;
+  --ink-muted: rgba(243, 238, 255, 0.7);
+
+  /* Borders & Shadows */
+  --border-width: 3px;
+  --border-radius: 4px;
+  --border-style: solid;
+  --border-color: var(--gold);
+  --border-subtle: rgba(138, 92, 214, 0.35);
+  --shadow-offset: 6px 6px 0px #000000;
+  --shadow-offset-gold: 6px 6px 0px var(--gold);
+  --shadow-offset-hover: 8px 8px 0px #000000;
+
+  /* Spacing Scale (8px Grid) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-8: 64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  /* Typography */
+  --font-display: 'Archivo Black', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-glitch: 'Rubik Glitch', 'Creepster', cursive;
+  --font-body: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display-jp: 'Dela Gothic One', sans-serif;
+  --font-body-jp: 'Noto Sans JP', sans-serif;
+
+  /* Fluid Typography Scale */
+  --text-hero: clamp(3.2rem, 11vw, 8.5rem);
+  --text-chapter: clamp(2.8rem, 9.5vw, 7.5rem);
+  --text-h2: clamp(1.8rem, 4vw, 2.75rem);
+  --text-h3: clamp(1.25rem, 2.2vw, 1.6rem);
+  --text-body: clamp(1rem, 1.2vw, 1.125rem);
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Transitions */
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-fast: 0.15s var(--ease-snappy);
+  --transition-base: 0.25s var(--ease-snappy);
+  --transition-slow: 0.5s var(--ease-smooth);
+
+  /* Layout */
+  --max-width: 1240px;
+  --header-height: 72px;
+  --z-base: 1;
+  --z-content: 10;
+  --z-nav: 100;
+  --z-cursor: 999;
+  --z-gate: 1000;
+}
+
+/* Japanese Font Overrides */
+html[lang="ja"] {
+  --font-display: var(--font-display-jp);
+  --font-body: var(--font-body-jp);
+}
+
+/* Calm Mode Overrides */
+html.calm-mode {
+  --shadow-offset: 4px 4px 0px #000000;
+  --transition-fast: 0.05s ease;
+  --transition-base: 0.1s ease;
+  --transition-slow: 0.15s ease;
+}

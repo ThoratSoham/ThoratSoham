@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Lost in the Orbit | Soham Thorat</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    .not-found-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-4);
+      background: radial-gradient(circle at center, #281447 0%, var(--black) 80%);
+    }
+    .not-found-code {
+      font-family: var(--font-display);
+      font-size: clamp(6rem, 18vw, 14rem);
+      color: var(--gold);
+      line-height: 0.9;
+      text-shadow: 6px 6px 0px #000000;
+      margin-bottom: var(--space-2);
+    }
+    .not-found-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+      color: var(--ink);
+      margin-bottom: var(--space-3);
+    }
+  </style>
+</head>
+<body>
+  <div class="not-found-wrap">
+    <div class="not-found-code">404</div>
+    <h1 class="not-found-title">Page not found in this orbit</h1>
+    <p style="color: var(--ink-muted); max-width: 44ch; margin-bottom: var(--space-5);">
+      The link you followed went past the event horizon. Let's head back to safe ground.
+    </p>
+    <a href="index.html" class="btn btn-primary">
+      Return Home ✦
+    </a>
+  </div>
+</body>
+</html>
