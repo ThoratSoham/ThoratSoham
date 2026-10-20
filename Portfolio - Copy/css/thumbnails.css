@@ -118,6 +118,7 @@ body.thumb-page {
   cursor: ew-resize;
   user-select: none;
   -webkit-user-select: none;
+  touch-action: pan-y;
   border-bottom: 1px solid var(--line);
 }
 
@@ -160,6 +161,7 @@ body.thumb-page {
   background: var(--accent);
   box-shadow: 0 0 10px rgba(192, 132, 252, 0.6);
   pointer-events: none;
+  touch-action: none;
   z-index: 15;
   transform: translateX(-50%);
 }
@@ -169,8 +171,8 @@ body.thumb-page {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background: var(--bg);
   border: 1px solid var(--fg);
   color: var(--fg);
@@ -182,6 +184,7 @@ body.thumb-page {
   font-weight: 700;
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.8);
   user-select: none;
+  touch-action: none;
 }
 
 /* Monospace Floating Status Badges on Cards */
@@ -536,3 +539,129 @@ body.thumb-page {
   font-family: var(--mono);
   color: var(--accent);
 }
+
+/* ==========================================================================
+   Mobile & Tablet Responsive Overrides (thumbnails.html)
+   ========================================================================== */
+@media (max-width: 900px) {
+  .thumb-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .site-head {
+    grid-template-columns: auto 1fr auto;
+    gap: 12px;
+  }
+
+  .site-head .nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: 14px;
+    padding: 4px 0;
+  }
+
+  .site-head .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .thumb-toolbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .filter-pills {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-bottom: 6px;
+  }
+
+  .filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .thumb-chip {
+    flex: none;
+    font-size: 11px;
+    padding: 6px 12px;
+    min-height: 38px;
+  }
+
+  .view-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .thumb-view-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 8px;
+    min-height: 38px;
+  }
+
+  .hero-wordmark {
+    font-size: clamp(26px, 7vw, 42px);
+  }
+
+  .hero-stats-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-size: 11px;
+  }
+
+  .mag-wide {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .site-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .foot-links {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-head {
+    padding: 0 12px;
+  }
+
+  .site-subtitle, .h-status {
+    display: none;
+  }
+
+  .thumb-card-body {
+    padding: 12px;
+  }
+
+  .thumb-card-title {
+    font-size: 14px;
+  }
+
+  .thumb-modal-inner {
+    width: 95vw;
+    max-height: 90vh;
+  }
+
+  .thumb-modal-content {
+    padding: 14px;
+  }
+}
+

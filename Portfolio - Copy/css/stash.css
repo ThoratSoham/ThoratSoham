@@ -1260,7 +1260,31 @@ button {
 
 @media (max-width: 640px) {
   .site-head {
-    grid-template-columns: 1fr auto;
+    height: auto;
+    min-height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px var(--pad);
+  }
+  .brand-wrap {
+    order: 1;
+  }
+  .head-actions {
+    order: 2;
+  }
+  .site-head .nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    gap: 14px;
+    padding: 6px 0 2px 0;
+  }
+  .site-head .nav::-webkit-scrollbar {
+    display: none;
   }
   .site-subtitle, .h-status {
     display: none;
@@ -1271,4 +1295,8 @@ button {
   .c-cat {
     display: none;
   }
+  .hero-wordmark {
+    font-size: clamp(26px, 7vw, 42px);
+  }
 }
+

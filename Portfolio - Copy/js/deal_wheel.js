@@ -215,19 +215,51 @@
     }
 
     // Pointer Interaction (Drag, Swipe, Wheel)
+    let pointerStartX = 0;
+    let pointerStartY = 0;
+    let hasCaptured = false;
+
     stage.addEventListener('pointerdown', (e) => {
       if (e.button !== 0) return;
-      isDragging = true;
+      pointerStartX = e.clientX;
+      pointerStartY = e.clientY;
       lastPointerX = e.clientX;
       lastPointerTime = performance.now();
       velocity = 0;
-      stage.classList.add('is-interacting');
-      stage.setPointerCapture(e.pointerId);
+
+      // Mouse immediately captures; touch waits to distinguish horizontal swipe vs vertical scroll
+      if (e.pointerType === 'mouse') {
+        isDragging = true;
+        hasCaptured = true;
+        stage.classList.add('is-interacting');
+        stage.setPointerCapture(e.pointerId);
+      } else {
+        isDragging = false;
+        hasCaptured = false;
+      }
     });
 
     stage.addEventListener('pointermove', (e) => {
-      if (!isDragging) return;
       const now = performance.now();
+      const dxTotal = e.clientX - pointerStartX;
+      const dyTotal = e.clientY - pointerStartY;
+
+      // Touch gesture detection
+      if (!isDragging && e.pointerType !== 'mouse') {
+        if (Math.abs(dxTotal) > 8 && Math.abs(dxTotal) > Math.abs(dyTotal) * 1.2) {
+          isDragging = true;
+          hasCaptured = true;
+          stage.classList.add('is-interacting');
+          try {
+            stage.setPointerCapture(e.pointerId);
+          } catch (_) {}
+        } else if (Math.abs(dyTotal) > 10) {
+          // Vertical scroll: do not interfere
+          return;
+        }
+      }
+
+      if (!isDragging) return;
       const dx = e.clientX - lastPointerX;
       const dtPtr = Math.max((now - lastPointerTime) / 1000, 0.001);
       const stageW = stage.offsetWidth || 340;
@@ -240,7 +272,13 @@
       lastPointerTime = now;
     });
 
-    function endPointer() {
+    function endPointer(e) {
+      if (hasCaptured && e && e.pointerId) {
+        try {
+          stage.releasePointerCapture(e.pointerId);
+        } catch (_) {}
+      }
+      hasCaptured = false;
       if (!isDragging) return;
       isDragging = false;
       stage.classList.remove('is-interacting');
@@ -298,23 +336,42 @@
         }
       }
 
-      // Radii and pivot calculations (scaled dynamically based on normal vs expanded)
-      const scaleFactor = isExpanded ? 1.2 : 1.0;
-      // Bigger wheel radius
-      const baseRadius = 380 * scaleFactor;
-      const liftRadiusDelta = 190 * scaleFactor;
-      const radius = baseRadius + liftRadiusDelta * lift;
+      // Responsive radii and pivot calculations
+      const winW = window.innerWidth;
+      const isMobile = winW <= 768;
+      const isTablet = winW > 768 && winW <= 1024;
 
-      // Moved a bit lower: comfortably settled pivot
-      const basePivot = 230 * scaleFactor;
-      const liftPivotDelta = 110 * scaleFactor;
-      const pivot = basePivot + liftPivotDelta * lift;
+      let viewportScale = 1.0;
+      let baseR = 380;
+      let liftRDelta = 190;
+      let baseP = 230;
+      let liftPDelta = 110;
+
+      if (isMobile) {
+        viewportScale = Math.max(0.62, Math.min(0.85, winW / 480));
+        baseR = 250;
+        liftRDelta = 130;
+        baseP = 160;
+        liftPDelta = 75;
+      } else if (isTablet) {
+        viewportScale = 0.88;
+        baseR = 320;
+        liftRDelta = 160;
+        baseP = 200;
+        liftPDelta = 95;
+      }
+
+      const scaleFactor = (isExpanded ? 1.2 : 1.0) * viewportScale;
+      const radius = (baseR + liftRDelta * lift) * scaleFactor;
+      const pivot = (baseP + liftPDelta * lift) * scaleFactor;
 
       const grow = (0.72 + 0.28 * deal) * (1 + 0.25 * lift);
       const kick = -28 * lift; // left opening turn matches drift
 
-      // Scene stage transform: tilt back 12deg around X
-      sceneEl.style.transform = `perspective(1200px) translateY(${-10 - 10 * lift}px) rotateX(${12 * lift}deg) scale(${1 + 0.12 * lift})`;
+      // Scene stage transform: tilt back around X
+      const perspective = isMobile ? 800 : 1200;
+      const tiltX = isMobile ? 8 : 12;
+      sceneEl.style.transform = `perspective(${perspective}px) translateY(${-10 - 10 * lift}px) rotateX(${tiltX * lift}deg) scale(${1 + 0.08 * lift})`;
 
       // Render cards
       for (let i = 0; i < CARD_COUNT; i++) {
@@ -325,8 +382,9 @@
         const home = wrap(i * STEP - spin + kick);
         const away = Math.abs(home);
 
-        // Hide cards out of view past 86 degrees so ends never poke out
-        const isVis = away < 86;
+        // Hide cards out of view so ends never poke out
+        const cutoff = isMobile ? 78 : 86;
+        const isVis = away < cutoff;
         const visStr = isVis ? 'visible' : 'hidden';
         if (cardObj.lastVis !== visStr) {
           cardEl.style.visibility = visStr;
@@ -342,9 +400,9 @@
           continue;
         }
 
-        // Smooth opacity falloff between 62deg and 84deg so cards dissolve seamlessly
-        const fadeStart = 62;
-        const fadeEnd = 84;
+        // Smooth opacity falloff so cards dissolve seamlessly
+        const fadeStart = isMobile ? 54 : 62;
+        const fadeEnd = isMobile ? 76 : 84;
         let cardOpacity = 1;
         if (away > fadeStart) {
           cardOpacity = Math.max(0, 1 - (away - fadeStart) / (fadeEnd - fadeStart));

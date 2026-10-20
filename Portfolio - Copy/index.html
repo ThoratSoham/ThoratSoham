@@ -52,6 +52,7 @@
     <script src="js/deal_wheel.js"></script>
     <script type="module" src="js/interactive_enhancements.js"></script>
     <link rel="stylesheet" crossorigin href="css/format.css">
+    <link rel="stylesheet" href="css/mobile.css">
   </head>
   <body>
     <div id="app">
@@ -91,6 +92,15 @@
           </g>
         </svg>
       </div>
+
+      <!-- Mobile/Tablet Top Status Bar -->
+      <header class="mobile-top-bar" aria-label="Mobile Status and Navigation">
+        <div class="mobile-top-bar__status">
+          <span class="mobile-top-bar__dot" aria-hidden="true"></span>
+          <span>Soham Thorat · Portfolio</span>
+        </div>
+        <a href="creative.html" class="mobile-top-bar__link">Creative Stash ↗</a>
+      </header>
 
       <div class="screen">
         <nav class="nav">
@@ -811,7 +821,88 @@
         Sorry, this experience is designed<br />for desktop devices.
       </p>
     </div>
-  <script id="copy-email-script">
+
+    <!-- Mobile Compact Bottom Navigation Bar (Quick Tap Icons) -->
+    <nav class="mobile-bottom-nav" aria-label="Mobile Bottom Navigation">
+      <a href="#home" class="mob-nav-item active" id="mob-nav-home" aria-label="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="#creative-studio" class="mob-nav-item" id="mob-nav-reels" aria-label="Reels">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+        <span>Reels</span>
+      </a>
+      <a href="#tech-lab" class="mob-nav-item" id="mob-nav-tech" aria-label="Tech Lab">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span>Tech</span>
+      </a>
+      <a href="#about" class="mob-nav-item" id="mob-nav-about" aria-label="About">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>About</span>
+      </a>
+      <a href="creative.html" class="mob-nav-item mob-nav-item--accent" id="mob-nav-stash" aria-label="Creative Stash">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Stash ↗</span>
+      </a>
+    </nav>
+
+    <script id="mobile-enhancements-script">
+      // Mobile bottom nav active state scroll-spy
+      (function() {
+        var navItems = {
+          home: document.getElementById('mob-nav-home'),
+          reels: document.getElementById('mob-nav-reels'),
+          tech: document.getElementById('mob-nav-tech'),
+          about: document.getElementById('mob-nav-about')
+        };
+        var sections = [
+          { id: 'about', el: document.getElementById('about'), nav: navItems.about },
+          { id: 'tech', el: document.getElementById('tech-lab'), nav: navItems.tech },
+          { id: 'reels', el: document.getElementById('creative-studio'), nav: navItems.reels },
+          { id: 'home', el: document.getElementById('home'), nav: navItems.home }
+        ];
+
+        function onScroll() {
+          if (window.innerWidth > 1024) return;
+          var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+          var offset = scrollY + 220;
+
+          for (var i = 0; i < sections.length; i++) {
+            var s = sections[i];
+            if (s.el && s.el.offsetTop <= offset) {
+              for (var key in navItems) {
+                if (navItems[key]) navItems[key].classList.remove('active');
+              }
+              if (s.nav) s.nav.classList.add('active');
+              break;
+            }
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Touch tilt for 3D sticker in About
+        var stickerWrap = document.getElementById('about-sticker-wrap');
+        if (stickerWrap) {
+          var img = stickerWrap.querySelector('.about-sticker-img');
+          if (img) {
+            stickerWrap.addEventListener('touchmove', function(e) {
+              if (!e.touches || !e.touches[0]) return;
+              var rect = stickerWrap.getBoundingClientRect();
+              var touch = e.touches[0];
+              var x = (touch.clientX - rect.left) / rect.width - 0.5;
+              var y = (touch.clientY - rect.top) / rect.height - 0.5;
+              img.style.transform = 'perspective(500px) rotateY(' + (x * 30).toFixed(1) + 'deg) rotateX(' + (-y * 30).toFixed(1) + 'deg) scale3d(1.08, 1.08, 1.08)';
+            }, { passive: true });
+
+            stickerWrap.addEventListener('touchend', function() {
+              img.style.transform = 'perspective(500px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)';
+            });
+          }
+        }
+      })();
+    </script>
+    <script id="copy-email-script">
       document.addEventListener('click', function (e) {
         var b = e.target.closest('#copy-email');
         if (!b) return;
